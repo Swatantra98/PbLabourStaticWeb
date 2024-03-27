@@ -73,9 +73,21 @@ namespace PbLabourStatic.Controllers
                 throw new Exception(ex.Message);
             }
         }
-        public IActionResult OrgStructure()
+        public async Task<IActionResult> OrgStructure()
         {
-            return View();
+            try
+            {
+                var DocumentType = await _documentService.GetDocumentTypeList();
+                var model = new DocumentIndex
+                {
+                    isContentAllow = DocumentType.Any(dt => dt.DocumentTypeName == "Content")
+                };
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         public IActionResult RightToInformation()
         {

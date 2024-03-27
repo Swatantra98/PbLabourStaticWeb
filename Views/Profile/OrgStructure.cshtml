@@ -1,4 +1,10 @@
-﻿<style>
+﻿@model DocumentIndex
+@{
+    ViewData["Title"] = "Home Page";
+    int countWhatsNew = 1;
+    int countNewNoti = 1;
+}
+<style>
     .OrgStuc {
         border: 1px solid lightgrey;
         padding: 10px;
@@ -48,8 +54,17 @@
     <div class="container" style="text-align: center;">
         <div class="OrgStuc">
             <span class="icon">
-                <img src="../assets/img/Org/Org.jpeg"
-                     alt="Section Title Icons">
+                @if (Model.isContentAllow)
+                {
+                    <img src="../assets/img/Org/Org1.jpeg"
+                         alt="Section Title Icons">
+                }
+                else
+                {
+                    <img src="../assets/img/Org/Org.jpeg"
+                         alt="Section Title Icons">
+                }
+                
             </span>
         </div>
     </div>

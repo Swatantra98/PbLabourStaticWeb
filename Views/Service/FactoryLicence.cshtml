@@ -1,15 +1,13 @@
 ﻿@using Microsoft.Extensions.Configuration
 @inject IConfiguration Configuration
-<style>
-    .GIGWMenu {
-        width: 100%;
-        display: none;
-        height: 150px;
-        margin-top: 115px;
-        position: fixed;
-        z-index: 9999999;
-    }
-
+<style>      .GIGWMenu {
+    width: 100%;
+    display: none;
+    height: 150px;
+    margin-top: 115px;
+    position: fixed;
+    z-index: 9999999;
+}
     .inner-list ul li:before {
         content: none;
         font-family: "Font Awesome 5 Pro";
@@ -96,11 +94,9 @@
         .imgCon {
             width: 20%;
         }
-
-        .imgCon1 {
-            width: 20%;
-        }
-
+         .imgCon1 {
+        width: 20%;
+    }
         .textCon {
             text-align: left;
             margin-left: 0px;
@@ -136,7 +132,7 @@
         <div class="row justify-content-center text-center">
             <div class="col-lg-9 col-xl-7">
                 <div class="section-title">
-                    <h2 class="title1">How to Obtain a Factory License?</h2>
+                    <h2 class="title1">Factory Licence</h2>
                     <span class="icon">
                         <img src="../assets/img/icon/factory.png" style="width: 20%;"
                              alt="Section Title Icons">
@@ -159,7 +155,7 @@
                                 <div class="imgCon"><img src="../assets/img/icon/file.png" alt="Comment Author"></div>
                                 <div class="comment-content">
                                     <div class="comment-author">
-                                        <h4 class="name" style="margin-left: 100px;"><strong>Overview</strong></h4>
+                                        <h4 class="name"  style="margin-left: 100px;"><strong>Overview</strong></h4>
                                     </div>
                                     <p class="text" style="margin-left: 100px;">
                                         The employer has to get approved the proposed building plans prior to construction of the factory from the Directorate of Factories in accordance with the provisions of Section 6 of the Act and rule 3 - A,4, 5 and
@@ -201,7 +197,7 @@
         </div>
     </section>
     <hr />
-    <section class="vs-testimonial-wrapper vs-testimonial-layout1 product-details-layout1 marginClass">
+ <section class="vs-testimonial-wrapper vs-testimonial-layout1 product-details-layout1 marginClass">
         <div class="col-12" style="margin-left:auto;margin-right:auto;">
             <div class="tab-content">
                 <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
@@ -220,7 +216,7 @@
                 </div>
             </div>
         </div>
-        <div class="row flex-row-reverse align-items-center">
+     <div class="row flex-row-reverse align-items-center">
             <div class="col-lg-5 col-xl-6">
                 <div class="position-relative d-inline-block"><img class="zoom" src="../assets/img/logo-41.png"> </div>
             </div>
@@ -241,10 +237,10 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
     <hr />
     <section class="product-details-layout1 marginClass">
-        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+          <div class="col-12" style="margin-left:auto;margin-right:auto;">
             <div class="tab-content">
                 <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
                     <div class="blog-comment-area">
@@ -402,12 +398,9 @@
                                             <div class="comment-top">
                                                 <div class="comment-author">
                                                     <span class="commented-on">Service - I</span>
-                                                    <h5 class="name">How to Register Factory Workers to Access Benefits From Various<br /> Schemes Offered by the Labor Welfare Board?</h5>
+                                                    <h4 class="name">LWF (Labour Welfare Fund)</h4>
                                                 </div>
-                                                <div class="reply_and_edit">
-                                                    <a href="@Url.Action("PunjabWelfareBoard", "Profile")" class="vs-btn icon-none style5"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a>
-                                                    @* <a href="@ViewBag.pbLabourAdminStaticBaseUrl/FactoryActPDFs/LWF.pdf" class="vs-btn icon-none style5"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a> *@
-                                                </div>
+                                                <div class="reply_and_edit"><a href="@ViewBag.pbLabourAdminStaticBaseUrl/FactoryActPDFs/LWF.pdf" class="vs-btn icon-none style5"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -418,7 +411,7 @@
                                             <div class="comment-top">
                                                 <div class="comment-author">
                                                     <span class="commented-on">Service - II</span>
-                                                    <h5 class="name">How to Fill the Annual Returns for your Factory License?</h5>
+                                                    <h4 class="name">Annual Returns</h4>
                                                 </div>
                                                 <div class="reply_and_edit"><a href="@ViewBag.pbLabourAdminStaticBaseUrl/FactoryActPDFs/AnnualReturns.pdf" class="vs-btn icon-none style5"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a></div>
                                             </div>
@@ -431,7 +424,7 @@
                                             <div class="comment-top">
                                                 <div class="comment-author">
                                                     <span class="commented-on">Service - III</span>
-                                                    <h5 class="name">How to Obtain a Renewed Factory License?</h>
+                                                    <h4 class="name">Factory Renewal</h4>
                                                 </div>
                                                 <div class="reply_and_edit"><a href="@ViewBag.pbLabourAdminStaticBaseUrl/FactoryActPDFs/FactoryRenewal.pdf" class="vs-btn icon-none style5"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a></div>
                                             </div>
@@ -444,20 +437,20 @@
                                             <div class="comment-top">
                                                 <div class="comment-author">
                                                     <span class="commented-on">Service - IV</span>
-                                                    <h5 class="name">How to Obtain a Amendment Factory License?</h5>
+                                                    <h4 class="name">Factory Amendment</h4>
                                                 </div>
                                                 <div class="reply_and_edit"><a href="@ViewBag.pbLabourAdminStaticBaseUrl/FactoryActPDFs/FactoryAmendment.pdf" class="vs-btn icon-none style5"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a></div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="vs-comment">
+                                 <li class="vs-comment">
                                     <div class="vs-post-comment">
                                         <div class="comment-content col-lg-12">
                                             <div class="comment-top">
                                                 <div class="comment-author">
                                                     <span class="commented-on">Service - V</span>
-                                                    <h5 class="name">How to Obtain Permission for Women Workers to Work Night<br /> Shifts Under the Factory Act?</h5>
+                                                    <h4 class="name">Permission For Women Worker In Night Shift Under Factory Act</h4>
                                                 </div>
                                                 <div class="reply_and_edit"><a href="@ViewBag.pbLabourAdminStaticBaseUrl/SampleFormPdf/FactoryNighShift.pdf" class="vs-btn icon-none style5"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a></div>
                                             </div>
@@ -504,7 +497,7 @@
             <div class="col-lg-7 col-xl-6">
                 <div class="cta-content text-center text-lg-left">
                     <h2 class="cta-title" style="color:#08275a;">
-                        To <strong> Apply</strong>
+                       To <strong> Apply</strong>
                     </h2>
                 </div>
             </div>
