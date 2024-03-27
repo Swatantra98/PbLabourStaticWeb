@@ -12,9 +12,6 @@ namespace PbLabourStatic.Models
         public DbSet<Document> Documents { get; set; }
         public DbSet<Officers> Officers { get; set; }
         public DbSet<DocumentType> DocumentTypes { get; set; }
-
-
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
