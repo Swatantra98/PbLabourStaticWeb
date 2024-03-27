@@ -5,10 +5,7 @@ using System.Diagnostics;
 using PbLabourStatic.ViewModels;
 using Newtonsoft.Json;
 using System.Data.Entity;
-using System.Data;
-using System.Data.SqlClient;
-using PbLabourStatic.Helpers;
-using Microsoft.Extensions.Configuration;
+using System.Xml.Linq;
 
 namespace PbLabourStatic.Controllers
 {
@@ -34,9 +31,18 @@ namespace PbLabourStatic.Controllers
                 ViewBag.pbLabourAdminStaticBaseUrl = _configuration.GetSection("AppPath").GetSection("pbLabourAdminStaticBaseUrl").Value;
                 ViewBag.rootPath = _configuration.GetSection("AppPath").GetSection("rootPath").Value;
                 ViewBag.StaticSitePath = _configuration.GetSection("AppPath").GetSection("StaticSitePath").Value;
+                // Retrieve DocumentTypes list
+                var DocumentType = await _documentService.GetDocumentTypeList();
+
+                // Retrieve top documents
+                var topDocuments = await _documentService.GetTop();
+
                 var model = new DocumentIndex
                 {
-                    Documents = await _documentService.GetTop()
+                    Documents = topDocuments,
+                    isBannerImageAllow = DocumentType.Any(dt => dt.DocumentTypeName == "Banner"),
+                    isGailaryImageAllow = DocumentType.Any(dt => dt.DocumentTypeName == "GailaryImage"),
+                    isContentAllow = DocumentType.Any(dt => dt.DocumentTypeName == "Content")
                 };
                 return View(model);
             }
@@ -125,86 +131,9 @@ namespace PbLabourStatic.Controllers
                 throw new Exception(ex.Message);
             }
         }
-        public async Task<IActionResult> Dashboard()
+        public IActionResult Dashboard()
         {
-            try
-            {
-                // Call the stored procedure to get the counts
-                var countsData = await GetCounts();
-
-                // Pass the counts to the view model
-                var model = new Dashboard
-                {
-                    FactoryReceived = countsData.FactoryReceived,
-                    FactoryApproved = countsData.FactoryApproved,
-                    ShopReceived = countsData.ShopReceived,
-                    ShopApproved = countsData.ShopApproved,
-                    BOCWReceived = countsData.BOCWReceived,
-                    BOCWApproved = countsData.BOCWApproved,
-                    ContactLabourReceived = countsData.ContactLabourReceived,
-                    ContactLabourApproved = countsData.ContactLabourApproved,
-                    StateMigrantReceived = countsData.StateMigrantReceived,
-                    StateMigrantApproved = countsData.StateMigrantApproved
-                };
-
-                return View(model);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        private async Task<Dashboard> GetCounts()
-        {
-            try
-            {
-                // Load configuration
-                IConfigurationRoot configuration = new ConfigurationBuilder()
-                    .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-                    .AddJsonFile("appsettings.json")
-                    .Build();
-
-                // Retrieve connection string
-                string connectionString = configuration.GetConnectionString("DbConStr1");
-
-                // Open connection and execute command
-                using (var connection = new SqlConnection(connectionString))
-                {
-                    await connection.OpenAsync();
-                    using (var command = new SqlCommand("GetDashboardDataStaticWeb", connection))
-                    {
-                        command.CommandType = CommandType.StoredProcedure;
-                        
-                        using (var reader = await command.ExecuteReaderAsync())
-                        {
-                            var dashboardApplicationCount = new Dashboard();
-
-                            // Read data and populate dashboard object
-                            while (await reader.ReadAsync())
-                            {
-                                dashboardApplicationCount.FactoryReceived = reader.GetInt32(0);
-                                dashboardApplicationCount.FactoryApproved = reader.GetInt32(1);
-                                dashboardApplicationCount.ShopReceived = reader.GetInt32(2);
-                                dashboardApplicationCount.ShopApproved = reader.GetInt32(3);
-                                dashboardApplicationCount.BOCWReceived = reader.GetInt32(4);
-                                dashboardApplicationCount.BOCWApproved = reader.GetInt32(5);
-                                dashboardApplicationCount.ContactLabourReceived = reader.GetInt32(6);
-                                dashboardApplicationCount.ContactLabourApproved = reader.GetInt32(7);
-                                dashboardApplicationCount.StateMigrantReceived = reader.GetInt32(8);
-                                dashboardApplicationCount.StateMigrantApproved = reader.GetInt32(9);
-                            }
-
-                            return dashboardApplicationCount;
-                        }
-                        await connection.CloseAsync();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return View();
         }
         public IActionResult AboutUs()
         {
