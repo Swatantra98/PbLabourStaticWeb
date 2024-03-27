@@ -6,261 +6,256 @@
 }
 
 <style>
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .fa {
-        font-size: 22px;
-        font-weight: 100;
-        margin-top: 10px;
-        color: rgb(68, 192, 196);
-        margin-left: 35px;
-    }
-
-    .width50 {
-        width: 50%;
-    }
-
-    .videoCon {
-        width: 40%;
-        position: relative;
-    }
-
-    .backgroundImgCon {
-        padding: 50px;
-    }
-
-    .i1 {
-        margin-left: 50px;
-    }
-
-    .i2 {
-        margin-left: 140px;
-    }
-
-    .i3 {
-        margin-left: 75px;
-    }
-
-    .i4 {
-        margin-left: 0px;
-    }
-
-    @@media only screen and (max-width:500px) {
-        #ls-global .ls-container, #ls-global .ls-container .ls-bottom-nav-wrapper, #ls-global .ls-container .ls-bottom-nav-wrapper *, #ls-global .ls-container .ls-bottom-nav-wrapper span *, #ls-global .ls-container .ls-slide-transition-wrapper, #ls-global .ls-container .ls-slide-transition-wrapper *, #ls-global .ls-direction-fix, body .ls-container, body .ls-container .ls-bottom-nav-wrapper, body .ls-container .ls-bottom-nav-wrapper *, body .ls-container .ls-bottom-nav-wrapper span *, body .ls-container .ls-slide-transition-wrapper, body .ls-container .ls-slide-transition-wrapper *, body .ls-direction-fix, html .ls-container, html .ls-container .ls-bottom-nav-wrapper, html .ls-container .ls-bottom-nav-wrapper *, html .ls-container .ls-bottom-nav-wrapper span *, html .ls-container .ls-slide-transition-wrapper, html .ls-container .ls-slide-transition-wrapper *, html .ls-direction-fix {
-            direction: ltr !important;
-            margin-top: 85px;
+        ::-webkit-scrollbar {
+            display: none;
         }
 
-        .gutterBoxCon {
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
+        .fa {
+            font-size: 22px;
+            font-weight: 100;
+            margin-top: 10px;
+            color: rgb(68, 192, 196);
+            margin-left: 35px;
+        }
+
+        .width50 {
+            width: 50%;
         }
 
         .videoCon {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
+            width: 40%;
+            position: relative;
         }
 
         .backgroundImgCon {
-            padding: 0px;
+            padding: 50px;
         }
 
-        .vs-btn.style2 {
-            margin-top: 10px;
+        .i1 {
+            margin-left: 50px;
         }
-    }
 
-    a:hover {
-        text-decoration: none;
-        color: black;
-    }
+        .i2 {
+            margin-left: 140px;
+        }
 
-    .heightAuto {
-        height: auto;
-    }
+        .i3 {
+            margin-left: 75px;
+        }
 
-    .ellipse {
-        white-space: nowrap;
-        display: inline-block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+        .i4 {
+            margin-left: 0px;
+        }
 
-    .two-lines {
-        -webkit-line-clamp: 2;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        white-space: normal;
-    }
+        @@media only screen and (max-width:500px) {
+            #ls-global .ls-container, #ls-global .ls-container .ls-bottom-nav-wrapper, #ls-global .ls-container .ls-bottom-nav-wrapper *, #ls-global .ls-container .ls-bottom-nav-wrapper span *, #ls-global .ls-container .ls-slide-transition-wrapper, #ls-global .ls-container .ls-slide-transition-wrapper *, #ls-global .ls-direction-fix, body .ls-container, body .ls-container .ls-bottom-nav-wrapper, body .ls-container .ls-bottom-nav-wrapper *, body .ls-container .ls-bottom-nav-wrapper span *, body .ls-container .ls-slide-transition-wrapper, body .ls-container .ls-slide-transition-wrapper *, body .ls-direction-fix, html .ls-container, html .ls-container .ls-bottom-nav-wrapper, html .ls-container .ls-bottom-nav-wrapper *, html .ls-container .ls-bottom-nav-wrapper span *, html .ls-container .ls-slide-transition-wrapper, html .ls-container .ls-slide-transition-wrapper *, html .ls-direction-fix {
+                direction: ltr !important;
+                margin-top: 85px;
+            }
 
-    .width {
-        width: 100%;
-    }
+            .gutterBoxCon {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-    .h2 {
-        font-size: 30px;
-        font-weight: 900;
-    }
+            .videoCon {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-    .counter-box-layout3 .row > div:after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 50%;
-        height: 100px;
-        width: 1px;
-        border-right: 1px dashed;
-        margin-top: -50px;
-        border-color: inherit;
-        display: none;
-    }
+            .backgroundImgCon {
+                padding: 0px;
+            }
 
-    .counter-box-layout3 .row > div {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
+            .vs-btn.style2 {
+                margin-top: 10px;
+            }
+        }
 
-    .guttersCon {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 80.5%;
-        margin-left: 435px;
-    }
+        a:hover {
+            text-decoration: none;
+            color: black;
+        }
 
-    .buttonCon {
-        width: 14.7%;
-        border: 1px solid rgb(119 239 243) !important;
-        border-radius: 25px;
-        margin-left: 27px;
-        background: rgb(68, 192, 196) !important;
-        box-shadow: 0px 0px 5px #212e40;
-    }
+        .heightAuto {
+            height: auto;
+        }
 
-    .txtLogin {
-        margin-left: -40px;
-    }
+        .ellipse {
+            white-space: nowrap;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
-    .txtApply {
-        margin-left: -40px;
-    }
+        .two-lines {
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
 
-    .logoCon {
-        width: 60%;
-        margin-top: 25px;
-    }
-
-    @@media only screen and (max-width: 600px) {
-        .guttersCon {
-            padding: 20px;
+        .width {
             width: 100%;
-            margin-left: auto;
+        }
+
+        .h2 {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .counter-box-layout3 .row > div:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            height: 100px;
+            width: 1px;
+            border-right: 1px dashed;
+            margin-top: -50px;
+            border-color: inherit;
+            display: none;
+        }
+
+        .counter-box-layout3 .row > div {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .guttersCon {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 80.5%;
+            margin-left: 435px;
         }
 
         .buttonCon {
-            width: 100%;
-            border: 1px solid;
+            width: 14.7%;
+            border: 1px solid rgb(119 239 243) !important;
             border-radius: 25px;
-            margin-left: 20px;
-            margin-top: 10px;
-            margin-left: -120px
+            margin-left: 27px;
+            background: rgb(68, 192, 196) !important;
+            box-shadow: 0px 0px 5px #212e40;
         }
 
-        .align-items-center {
-            -ms-flex-align: center !important;
-            -webkit-box-align: center !important;
-            -webkit-align-items: center !important;
-            align-items: center !important;
-            margin-top: 0px;
+        .txtLogin {
+            margin-left: -40px;
         }
 
-        .alineLeftCon1 {
-            margin-left: -120px;
-        }
-
-        .alineLeftCon2 {
-            margin-left: -210px;
-        }
-
-        .alineLeftCon3 {
-            margin-left: -150px;
-        }
-
-        .alineLeftCon4 {
-            margin-left: -80px;
-        }
-
-        .row {
-            display: -ms-flexbox;
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            -webkit-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin-right: 0px;
-            margin-left: 5px;
+        .txtApply {
+            margin-left: -40px;
         }
 
         .logoCon {
             width: 60%;
-            margin-top: 0px;
+            margin-top: 25px;
         }
 
-        .carousel-container .slick-list {
-            overflow: visible;
-            width: 100%;
+        @@media only screen and (max-width: 600px) {
+            .guttersCon {
+                padding: 20px;
+                width: 100%;
+                margin-left: auto;
+            }
+
+            .buttonCon {
+                width: 100%;
+                border: 1px solid;
+                border-radius: 25px;
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-left: -120px
+            }
+
+            .align-items-center {
+                -ms-flex-align: center !important;
+                -webkit-box-align: center !important;
+                -webkit-align-items: center !important;
+                align-items: center !important;
+                margin-top: 0px;
+            }
+
+            .alineLeftCon1 {
+                margin-left: -120px;
+            }
+
+            .alineLeftCon2 {
+                margin-left: -210px;
+            }
+
+            .alineLeftCon3 {
+                margin-left: -150px;
+            }
+
+            .alineLeftCon4 {
+                margin-left: -80px;
+            }
+
+            .row {
+                display: -ms-flexbox;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: 0px;
+                margin-left: 5px;
+            }
+
+            .logoCon {
+                width: 60%;
+                margin-top: 0px;
+            }
+
+            .carousel-container .slick-list {
+                overflow: visible;
+                width: 100%;
+            }
+
+            .videoCon {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
-        .videoCon {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
+        .vs-btn.style2:hover {
+            border: 1px solid;
         }
-    }
-
-    .vs-btn.style2:hover {
-        border: 1px solid;
-    }
-
-    .bxshadow {
-        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    }
+        .bxshadow{
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
 
 </style>
 
 <section class="vs-hero-wrapper vs-hero-layout4" style="margin-top:100px;">
     <div class="vs-hero-carousel ls-v6 ls-container ls-fullwidth ls-device-is-desktop" data-height="800" data-responsiveunder="1920" data-container="1920"
-         data-bigwidth="100%" data-slidertype="responsive" data-navprevnext="true" data-current-slide="1">
-        @if (Model.isBannerImageAllow)
-        {
-            <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1;">
-                <img src="~/assets/img/hero/banner_1.jpg" alt="Slide Background" class="ls-bg">
-                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 13%; top: 56%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
-                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 18%; top: 16%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
-                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
-                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
-                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
-            </div>
-            <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1;">
-                <img src="~/assets/img/hero/banner_2.jpg" alt="Slide Background" class="ls-bg">
-                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 13%; top: 56%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
-                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 18%; top: 16%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
-                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
-                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
-                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
-            </div>
-        }
-
+         data-bigwidth="100%" data-slidertype="responsive" data-navprevnext="true" data-current-slide="1" >
+        <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1;">
+            <img src="~/assets/img/hero/banner_1.jpg" alt="Slide Background" class="ls-bg" >
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 13%; top: 56%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 18%; top: 16%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+        </div>
+        <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1;">
+            <img src="~/assets/img/hero/banner_2.jpg" alt="Slide Background" class="ls-bg">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 13%; top: 56%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 18%; top: 16%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+        </div>
         <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1;">
             <img src="~/assets/img/hero/banner_3.jpg" alt="Slide Background" class="ls-bg">
             <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 13%; top: 56%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
@@ -290,7 +285,7 @@
                     <div class="section-title2">
                         <span class="icon">
                             <img src="~/assets/img/icon/messages.png" style="width: 20%;"
-                                 alt="Section Title Icons">
+                             alt="Section Title Icons">
                             <i class="line"></i> <i class="line-2"></i>
                         </span>
                     </div>
@@ -712,7 +707,7 @@
                     <span class="process-number text-primary3">05</span>
                     <div class="process-icon mb-25">
                         <span class="text-primary">
-                            <img src="~/assets/img/icon/laborers.png" style="width: 30%;">
+                            <img src="~/assets/img/icon/laborers.png" style="width: 30%;">  
                         </span>
                     </div>
                     <h3 class="process-title heading4">
@@ -848,79 +843,76 @@
             </div>
             <div class="carousel-container">
                 <div class="row vs-carousel" data-slidetoshow="3" data-centermode="true" data-loop="false" data-arrows="true" data-prevarrow="far fa-arrow-left" data-nextarrow="far fa-arrow-right" data-mlslidetoshow="3" data-lgslidetoshow="2" data-mdslidetoshow="2" data-smslidetoshow="1" data-xsslidetoshow="1">
-                    @if (Model.isGailaryImageAllow)
-                    {
-                        <div class="col-xl-4">
-                            <div class="vs-service" style="height:300px;">
-                                <div class="service-image">
-                                    <a class="bg-theme popup-image"
-                                       href="~/assets/img/Gallery/10.jpg">
-                                        <img src="~/assets/img/Gallery/thumb/10.jpg" alt="Service Image" class="w-100">
-                                    </a>
-                                </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/10.jpg">
+                                    <img src="~/assets/img/Gallery/thumb/10.jpg" alt="Service Image" class="w-100">
+                                </a>
                             </div>
                         </div>
-                        <div class="col-xl-4">
-                            <div class="vs-service" style="height:300px;">
-                                <div class="service-image">
-                                    <a class="bg-theme popup-image"
-                                       href="~/assets/img/Gallery/11.jpg">
-                                        <img src="~/assets/img/Gallery/thumb/11.jpg" alt="Service Image" class="w-100">
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/11.jpg">
+                                    <img src="~/assets/img/Gallery/thumb/11.jpg" alt="Service Image" class="w-100">
+                                </a>
                             </div>
                         </div>
-                        <div class="col-xl-4">
-                            <div class="vs-service" style="height:300px;">
-                                <div class="service-image">
-                                    <a class="bg-theme popup-image"
-                                       href="~/assets/img/Gallery/12.jpg">
-                                        <img src="~/assets/img/Gallery/thumb/12.jpg" alt="Service Image" class="w-100">
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/12.jpg">
+                                    <img src="~/assets/img/Gallery/thumb/12.jpg" alt="Service Image" class="w-100">
+                                </a>
                             </div>
                         </div>
-                        <div class="col-xl-4">
-                            <div class="vs-service" style="height:300px;">
-                                <div class="service-image">
-                                    <a class="bg-theme popup-image"
-                                       href="~/assets/img/Gallery/13.jpg">
-                                        <img src="~/assets/img/Gallery/thumb/13.jpg" alt="Service Image" class="w-100">
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/13.jpg">
+                                    <img src="~/assets/img/Gallery/thumb/13.jpg" alt="Service Image" class="w-100">
+                                </a>
                             </div>
                         </div>
-                        <div class="col-xl-4">
-                            <div class="vs-service" style="height:300px;">
-                                <div class="service-image">
-                                    <a class="bg-theme popup-image"
-                                       href="~/assets/img/Gallery/14.jpg">
-                                        <img src="~/assets/img/Gallery/thumb/14.jpg" alt="Service Image" class="w-100">
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/14.jpg">
+                                    <img src="~/assets/img/Gallery/thumb/14.jpg" alt="Service Image" class="w-100">
+                                </a>
                             </div>
                         </div>
-                        <div class="col-xl-4">
-                            <div class="vs-service" style="height:300px;">
-                                <div class="service-image">
-                                    <a class="bg-theme popup-image"
-                                       href="~/assets/img/Gallery/15.jpg">
-                                        <img src="~/assets/img/Gallery/thumb/15.jpg" alt="Service Image" class="w-100">
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/15.jpg">
+                                    <img src="~/assets/img/Gallery/thumb/15.jpg" alt="Service Image" class="w-100">
+                                </a>
                             </div>
                         </div>
-                        <div class="col-xl-4">
-                            <div class="vs-service" style="height:300px;">
-                                <div class="service-image">
-                                    <a class="bg-theme popup-image"
-                                       href="~/assets/img/Gallery/16.jpg">
-                                        <img src="~/assets/img/Gallery/thumb/16.jpg" alt="Service Image" class="w-100">
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/16.jpg">
+                                    <img src="~/assets/img/Gallery/thumb/16.jpg" alt="Service Image" class="w-100">
+                                </a>
                             </div>
                         </div>
-                    }
+                    </div>
                     <div class="col-xl-4">
                         <div class="vs-service" style="height:300px;">
                             <div class="service-image">

@@ -133,7 +133,7 @@
                                 -webkit-box-flex: 0;
                                 -webkit-flex: 0 0 60%;
                                 -ms-flex: 0 0 60%;
-                                flex: 0 0 75%;
+                                flex: 0 0 70%;
                                 width: 30%;
                             }
 
@@ -312,18 +312,18 @@
     <header class="vs-header-wrapper header-layout4 position-absolute position-fixed py-2 py-md-3 py-lg-0" style="box-shadow:0px 0px 30px -15px black; ">
         <div class="container-fluid position-relative px-xl-0">
             <div class="row justify-content-between justify-content-xl-start align-items-center">
-                <div class="col-8 col-lg-3 col-xl-2">
+                <div class="col-6 col-lg-2 col-xl-2">
                     <div class="header-logo4">
                         <a href="@Url.Action("Index", "Home")"><img src="~/assets/img/Punjab.png" class="zoom" style="width: 30%;" alt="Logo"></a>
                     </div>
                 </div>
-                <div class="col-5 col-lg-auto col-xl-1">
+                <div class="col-3 col-lg-auto col-xl-1">
                     <button class="vs-menu-toggle d-inline-block d-lg-none">
                         <i class="far fa-bars"></i>
                     </button>
                 </div>
 
-                <div class="col-lg-8 col-xl-9 position-static d-flex justify-content-around">
+                <div class="col-lg-6 col-xl-9 position-static d-flex justify-content-around">
                     <nav class="main-menu menu-style1 mobile-menu-active text-right text-xl-center">
                         <ul>
                             <li><p class="headerMenu">@Html.ActionLink("Home", "Index", "Home")</p></li>
@@ -381,7 +381,7 @@
                                                 @Html.ActionLink("Building Plan Approval", "BuildingPlanApproval", "Service")
                                             </li>
                                             <li>
-                                                @Html.ActionLink("Factories Act, 1948", "FactoryLicence", "Service")
+                                                @Html.ActionLink("How to Register a Factory Under the Factory Act?", "FactoryLicence", "Service")
                                             </li>
                                             <li>
                                                 @Html.ActionLink("Shops/Comm. Est.Act, 1958", "ShopsCommercial", "Service")
@@ -455,7 +455,7 @@
                         </ul>
                     </nav>
                     <div class="header-right d-none d-xl-flex justify-content-end">
-                        <div class="align-self-center header-button col-6">
+                        <div class="align-self-center header-button col-5">
                             <a href="@Url.Action("ScreenReader", "Home")" class="icon-btn" data-toggle="tooltip" title="Screen Reader Access" target="_blank">
                                 <i class="fa fa-cog" aria-hidden="true" style=" margin-left: 0px;"></i>
                             </a>
@@ -569,7 +569,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="col-sm-5 col-lg-4 col-xl-2">
                         <div class="widget">
                             <h3 class="widget_title">Important Links</h3>
                             <ul>
