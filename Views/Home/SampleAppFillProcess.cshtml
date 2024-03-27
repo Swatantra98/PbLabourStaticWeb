@@ -1,0 +1,305 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<section class="vs-values-wrapper vs-values-layout1 py-60 py-lg-130" style="margin-bottom:-150px;">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2 class="title1">How To apply For Clearances</h2>
+                    <span class="icon">
+                        <img src="/assets/img/icon/custom-clearance.png" style="width: 20%;" alt="Section Title Icons">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="vs-faq-wrapper vs-faq-layout1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="faq-accordion-area" id="faqAccordion">
+                    <div class="faq-card open">
+                        <div class="faq-card-header" id="faqOne"><button class="faq-question" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Step 1: User Registration and Login</button></div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="faqOne" data-parent="#faqAccordion">
+                            <div class="faq-card-body">
+                                <p class="faq-text mb-0">1. If applicant is new to e-Labour portal, <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/UserRegistration.pdf" target="_blank"><b> Click here  </b> </a> for New User Registration. </p>
+                                <p class="faq-text mb-0">2. If applicant is already registered with e-Labour portal,<a href="https://pbindustries.gov.in/webportal/login" target="_blank"><b> Click here </b> </a> for Login.</p>
+                                <p class="faq-text mb-0">3. If applicant logged in for first time to e-Labour portal, then applicant has to update his/her profile with latest <b>photo</b>  and <b>signature</b> .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-card-header" id="faqTwo"><button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Step 2: List of Regulatory Clearances issued through e-Labour portal</button></div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#faqAccordion">
+                            <div class="faq-card-body">
+                                <p class="faq-text mb-0">1. Approval of <b>Building Plans</b> under The Punjab Factory Act, 1948. <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/BuildingPlan.pdf" target="_blank"><b>( How To Apply )</b> </a></p>
+                                <p class="faq-text mb-0">2. Registration/Grant of license/Renewal of <b>Factory License</b> under The Punjab Factory Act, 1948 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/FactoryLicense.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">3. Registration/Renewal/Amendment of <b>Shop and Commercial Establishment</b> under The Punjab Shop and Comm. Estab. Act, 1958 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/ShopRegistration.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">4. Registration/Amendment of <b>Establishment employing contract workers (Principal Employer)</b> under Contract Labour(R&A) Act, 1970 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/EstablishmentEmploying.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">5. Licensing/Renewal/Amendment of <b>Contract Labour</b> under The Contract Labour(R&A) Act, 1970 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/EmpContractLabour.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">6. Registration/Amendment of <b>Establishment Employing Migrant Workmen(Principal Employer)</b> under The Inter State Migrant Workmen Act, 1979 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/Interstate_PE.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">7. Licensing/Renewal/Amendment of <b>Migrant Workmen (Contractor)</b> under The Inter State Migrant Workmen Act, 1979 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/Interstate_CL.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">8. Licensing/Renewal/Amendment of <b>Motor Transport Workers</b> under The Motor Transport Workers Act, 1961 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/MotorTransport.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">9. Registration/Amendment of <b>Trade Union</b> under The Trade Union Act, 1926 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/TradeUnion.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">10. Registration/Amendment of <b>BOCW</b> under <b>BOCW Act</b>, 1996 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/BOCW.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">11. Registration of <b>Night Shift</b> under <b>Factory Act</b>, 1948 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/FactoryNighShift.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">12. Registration of <b>Night Shift</b> under <b>Shop Act</b>, 1958 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/ShopNighShift.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <p class="faq-text mb-0">13. Registration of <b>Combined Proposed Approval Of Building Plans</b> (HUD and Factories) <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/BuildingPlanHUDManual.pdf" target="_blank"><b> ( How To Apply ) </b> </a></p>
+                                <div class="vs-subscribe-form-wrap subscribe-form-layout1 bg-secondary border-primary py-40" style="border-bottom: none;">
+                                    <div class="container">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-7 col-xl-6">
+                                                <div class="cta-content text-center text-lg-left">
+                                                    <h2 class="cta-title" style="color:#08275a;">
+                                                        Apply For <strong>Services.</strong>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-xl-6">
+                                                <div class="cta-button text-center text-lg-right pt-4 pt-lg-0">
+                                                    <a href="https://pbindustries.gov.in/webportal/" class="form-group col-md-4 text-center text-md-left mb-0" target="_blank"><span class="vs-btn style2">Apply <i class="far fa-long-arrow-alt-right"></i></span><span class="btn-bg"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-card-header" id="faqThree"><button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Step 3: Modes Of Payment</button></div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="faqThree" data-parent="#faqAccordion">
+                            <div class="faq-card-body">
+                                <p class="faq-text mb-0">1. Online Payment</p>
+                                <p class="faq-text mb-0">2. Offline Payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-card-header" id="faqFour"><button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Step 4: Steps for obtaining Regulatory Clearances</button></div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="faqFour" data-parent="#faqAccordion">
+                            <div class="faq-card-body">
+                                <p class="faq-text mb-0">1. Submission of Regulatory Form along with fee by the applicant.</p>
+                                <p class="faq-text mb-0">2. If there is any discrepancy in submitted Form or Fee, the authority can raise objection.</p>
+                                <p class="faq-text mb-0">3. If authority has raised the objection, then applicant has to resolve the objection first.</p>
+                                <p class="faq-text mb-0">4. Issuance of Clearance by the authority.</p>
+                                <p class="faq-text mb-0">5. <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/TradeUnion.pdf" target="_blank"><b>Dealing Hand's Work Flow</b></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style=" margin-bottom: 80px;">
+    <div class="divider-layout1">
+        <span class="icon">
+            <img src="../assets/img/icon/planning.png" style="width: 50%;" alt="Section Title Icons">
+        </span>
+    </div>
+</div>
+
+<div class="vs-cart-wrapper" style="margin-bottom: 80px;">
+    <div class="container">
+        <div class="cart-table table-responsive">
+            <table class="table table-bordered mb-0">
+                <thead>
+                    <tr>
+                        <th class="cart-col-number" scope="col">S. No.</th>
+                        <th class="cart-col-productname" scope="col">Application Form</th>
+                        <th class="cart-col-file" scope="col">PDF</th>
+                        <th class="cart-col-quantity" scope="col">Sample Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">1</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">New User Registration and Login Process (Sample)</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/UserRegistration.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/BFD37LKwouI?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">2.1</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Building Plan Approval</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/BuildingPlan.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/9DhdJyAgWEM?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">2.2</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Download Clearance of Building Plan Approval</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/DownloadClearacesBuildingPlan.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/7z2p2bSrw3M?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">3.1</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Registration/Renewal of Factory License To run the factory</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/FactoryLicense.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/XoxpGTDZWtA?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">3.2</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Download clearance of factory licence</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/DownloadClearacesFL.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/lRAMlfjySvs?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">4.1</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Registration of Shops and commercial Establishments</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/ShopRegistration.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/9hezum_yn_E?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">4.2</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Download clearance of Shops and commercial Establishments</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/DownloadClearacesShop.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/nvR0YJNQ7a8?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">4.3/a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Licencing of Contractor Under Contract Labour(Act 1970)</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/EmpContractLabour.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/azkIK0cGJ14?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">4.4</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Download Clearance of Contractor Under Contract Labour(Act 1970)</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/DownloadClearacesCL.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/wTAzbN2MbVc?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">5</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Registration of Principal Employer Under Contract Labour(Act 1970)</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/EstablishmentEmploying.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/dumlFDE7b4I?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">6.1</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Download Clearance of Principal Employer Under Contract Labour(Act 1970)</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/DownloadClearacesPE.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/qub0AmB2YDw?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">6.2</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Registration of Principal Employer Under Contract Labour(Act 1970)</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/Interstate_CL.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/n4ULX3qGF_k?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">6.3</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Registration of Principal Employer Under Contract Labour(Act 1970)</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/DownloadClearacesISPE.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/yogXQfU0uPk?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">7.1</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">	Registration of Principal Employer UNDER THE INTER STATE MIGRANT WORKMEN ACT, 1979</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/Interstate_PE.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/BhFbwG0XMws?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">7.2</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Download Clearance of Principal Employer UNDER THE INTER STATE MIGRANT WORKMEN ACT, 1979</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/DownloadClearacesISPE.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/yogXQfU0uPk?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">8.1</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">LICENCE UNDER THE MOTOR TRANSPORT WORKERS ACT, 1961</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/MotorTransport.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/3wZLct8HR9w?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">8.2</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Download Clearance of UNDER THE MOTOR TRANSPORT WORKERS ACT, 1961</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/MotorTransport.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/DZ21p48qOSA?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">9.1</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">REGISTRAION UNDER THE TRADE UNION ACT, 1926</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/TradeUnion.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/zpBuwxVQpaI?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">9.2</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Download Clearance of THE TRADE UNION ACT, 1926</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/TradeUnion.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/VjkX6y7BcRs?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">10</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Third Party Validation</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/ThirdPartyValidation.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/2viyKFZmPdQ?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">11.1</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Classification of Establishment based on Risk Assesment(Factory Laws)</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/RandomizeFactoryInspection.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/6DxDAf7ITsA?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">11.2</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Processing of Factory Inspection Form</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/ProcessFactoryInspection.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/0GsKjfFQWiA?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">11.3</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Download Factory Inspection Report For Applicant</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/DownloadFactoryInspectionReport.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/2FCLfA-Yoag?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">12.1</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Classification of Establishment based on Risk Assesment(Labour Laws)</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/RandomizeShopInspection.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/6DxDAf7ITsA?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">12.2</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Processing of Labour Inspection Form</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/ProcessShopInspection.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/wxnsZciNYBI?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">12.3</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Download Labour Inspection Report For Applicant</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/DownloadShopInspectionReport.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/Q8m4C2a7-vA?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="shop-details.html" class="cart-productimage">13</a></td>
+                        <td><a href="shop-details.html" class="cart-productname">Apply Online Single Annual Return</a></td>
+                        <td class="cart-price"><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/AnnualReturns.pdf" target="_blank"><img src="~/assets/img/icon/pdf.png" /></a></td>
+                        <td><a href="https://www.youtube.com/embed/ookQgp2GXCo?autoplay=0&amp;origin=http://example.com" class="play-btn popup-video"><i class="fas fa-play"></i></a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="vs-subscribe-form-wrap subscribe-form-layout1 bg-secondary border-primary py-40 py-lg-80" style="border-bottom: none; margin: -10px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-xl-6">
+                <div class="cta-content text-center text-lg-left">
+                    <h2 class="cta-title" style="color:#08275a;">
+                        Apply For <strong>Service.</strong>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-6">
+                <div class="cta-button text-center text-lg-right pt-4 pt-lg-0">
+                    <a href="https://pbindustries.gov.in/webportal/" class="form-group col-md-4 text-center text-md-left mb-0" target="_blank"><span class="vs-btn style2">Apply <i class="far fa-long-arrow-alt-right"></i></span><span class="btn-bg"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

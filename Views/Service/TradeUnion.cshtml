@@ -1,0 +1,314 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+<style>      .GIGWMenu {
+    width: 100%;
+    display: none;
+    height: 150px;
+    margin-top: 115px;
+    position: fixed;
+    z-index: 9999999;
+}
+    .inner-list ul li:before {
+        content: none;
+        font-family: "Font Awesome 5 Pro";
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        box-shadow: 0px 5px 20px 0px rgb(17 180 245 / 15%);
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px;
+        color: rgb(68, 192, 196);
+        font-weight: 400;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    .marginClass {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @@media only screen and (max-width:500px) {
+        .title1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+    }
+      .requireCon {
+        margin-top: -50px;
+    }
+
+    .imgCon {
+        width: 5%;
+        float: left;
+    }
+
+    .imgCon1 {
+        width: 7%;
+        float: left;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    .textCon {
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+
+    .flowChartCon {
+        margin-top: -50px;
+        margin-bottom: -130px;
+    }
+
+    .process-layout4 .vs-process {
+        position: relative;
+        padding: 15px 40px 28px 15px;
+        margin-bottom: 15px;
+        height: 300px;
+        border: 1px solid rgb(68, 192, 196);
+    }
+
+    .bg-light {
+        background-color: rgb(165 229 255 / 7%) !important;
+    }
+
+    .mainCon {
+        border: 1px solid rgba(17, 180, 245, 0.3);
+        background-color: rgba(17, 180, 245, 0.07);
+        width: 63%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding: 20px
+    }
+
+    @@media only screen and (max-width: 600px) {
+        .title1 {
+            font-size: 32px;
+        }
+
+        .requireCon {
+            margin-top: 0px;
+        }
+
+        .imgCon {
+            width: 20%;
+        }
+
+        .textCon {
+            text-align: left;
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+
+        .flowChartCon {
+            margin-top: 0px;
+            margin-bottom: -130px;
+        }
+
+        .process-layout4 .vs-process {
+            position: relative;
+            padding: 15px 40px 28px 15px;
+            margin-bottom: 15px;
+            height: 300px;
+            border: 1px solid rgb(68, 192, 196);
+        }
+
+        .mainCon {
+            width: 90%
+        }
+</style>
+<section class="vs-values-wrapper vs-values-layout1 py-60">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+        </div>
+    </div>
+</section>
+<section class="vs-values-wrapper vs-values-layout1">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-7">
+                <div class="section-title">
+                    <h2 class="title1">Trade Union </h2>
+                    <span class="icon">
+                        <img src="../assets/img/icon/stock.png" style="width: 20%;"
+                             alt="Section Title Icons">
+                    </span>
+                    <p class="text">Registration of Trade Union under The Trade Union Act, 1926</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="mainCon">
+ <section class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area blog-comments-layout1">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/file.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name"  style="margin-left: 100px;"><strong>Overview</strong></h4>
+                                    </div>
+                                    <p class="text" style="margin-left: 100px;">
+                                      1.  Any group of seven or more persons can form a Trade Union.
+                                    </p>
+                                    <p class="text" style="margin-left: 100px;">
+                                      2.  No Trade Union of the workmen shall be registered unless at least 10% or 100, which ever is less, persons engaged or employed in the Establishment or industry with which it is connected are the members of such trade union on the date of making of application for registration.
+                                    </p>
+                                    <p class="text" style="margin-left: 100px;">
+                                      3. The minimum age limit for membership of a Trade Union is 18 years unless the rules of a particular trade union provide for higher age limit.
+                                    </p>
+                                    <p class="text" style="margin-left: 100px;">
+                                      4.  Every application for registration of a Trade union shall be made in (Form A) appended to the Trade Unions Act 1926 before the Registrar of Trade Unions and shall be accompanied by a copy of Rules of the trade union and a statement giving following particulars.
+                                    </p>
+                                       <p class="text" style="margin-left: 120px;">&#8801; Names, occupations and address of the members making application.</p>
+                                            <p class="text" style="margin-left: 120px;">&#8801; The name of the Trade union and the address of its lead Office.</p>
+                                            <p class="text" style="margin-left: 120px;">&#8801; The titles, names, ages addresses and occupations of the (office bearers) of the trade union as per format given in Form A appended to the<br> Trade Unions Act 1926.</p>
+                                            <p class="text" style="margin-left: 100px;">&Star;<b> In addition, the following documents are required to be submitted along with the application form:</b></p>
+                                            <p class="text" style="margin-left: 120px;">&#8801; Schedule I</p>
+                                            <p class="text" style="margin-left: 120px;">&#8801; Schedule II</p>
+                                            <p class="text" style="margin-left: 120px;">&#8801; Schedule III (optional)</p>
+                                            <p class="text" style="margin-left: 120px;">&#8801; Affidavit from General Secretary of Union</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon1"><img src="../assets/img/icon/timeline.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name"><strong>Time Line</strong>(RTS TimeLine)</h4>
+                                    </div>
+                                    <p class="text" style="margin-left: 100px;">
+                                Maximum Number of Days after complete application is submitted: 45 Days.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+ <section class="vs-testimonial-wrapper vs-testimonial-layout1 product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/folder.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name" style="margin-left: 100px;"><strong>Required documents</strong></h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row flex-row-reverse align-items-center">
+            <div class="col-lg-5 col-xl-6">
+                <div class="position-relative d-inline-block"><img class="zoom" src="../assets/img/logo-41.png"> </div>
+            </div>
+            <div class="col-lg-7 col-xl-6">
+                <div class="-about pt-4 pt-lg-0">
+                    <div class="inner-list">
+                        <ul>
+                            <li style="margin-top: 10px;">
+                                <strong>&#x2714;  Scan Copy of Schedule I.</strong>
+                                <strong>&#x2714;  Scan Copy of Schedule II.</strong>
+                                <strong>&#x2714;  Scan Copy of Schedule III (Optional).</strong>
+                                <strong>&#x2714;  Scan Copy of Preceeding.</strong>
+                                <strong>&#x2714;  Scan Copy of Affidavit.</strong>
+                                <strong>&#x2714;  Scan Copy of Officers Detail.</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<hr />
+       <section class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area blog-comments-layout1">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/rupee.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name"><strong>One Time Registration Fees</strong></h4>
+                                    </div>
+                                    <p class="text" style="margin-left: 80px;">
+                                       “&#8377; 100”
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<section class="vs-values-wrapper vs-values-layout1 py-60 " style="margin-top: -50px;">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+        </div>
+    </div>
+</section>
+<section class="vs-values-wrapper vs-values-layout1 py-60 " style="margin-top: -50px;">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+        </div>
+    </div>
+</section>
+<div class="vs-subscribe-form-wrap subscribe-form-layout1 bg-secondary border-primary py-40 py-lg-80" style="border-bottom: none; margin: -10px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-xl-6">
+                <div class="cta-content text-center text-lg-left">
+                    <h2 class="cta-title" style="color:#08275a;">
+                        To <strong>Apply</strong>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-6">
+                <div class="cta-button text-center text-lg-right pt-4 pt-lg-0">
+                 <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/TradeUnion.pdf" target="_blank" class="vs-btn style1 mb-3 mb-sm-0"><span class="btn-text">How To Apply<i class="far fa-reply"></i></span><span class="btn-bg" style="top: 222px; left: 175.469px;"></span></a>
+                    <a href="https://pbindustries.gov.in/webportal/" class="form-group col-md-4 text-center text-md-left mb-0" target="_blank"><span class="vs-btn style2">Click Here <i class="far fa-long-arrow-alt-right"></i></span><span class="btn-bg"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

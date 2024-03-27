@@ -1,0 +1,1184 @@
+﻿@model DocumentIndex
+@{
+    ViewData["Title"] = "Home Page";
+    int countWhatsNew = 1;
+    int countNewNoti = 1;
+}
+
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .fa {
+        font-size: 22px;
+        font-weight: 100;
+        margin-top: 10px;
+        color: rgb(68, 192, 196);
+        margin-left: 35px;
+    }
+
+    .width50 {
+        width: 50%;
+    }
+
+    .videoCon {
+        width: 40%;
+        position: relative;
+    }
+
+    .backgroundImgCon {
+        padding: 50px;
+    }
+
+    .i1 {
+        margin-left: 50px;
+    }
+
+    .i2 {
+        margin-left: 140px;
+    }
+
+    .i3 {
+        margin-left: 75px;
+    }
+
+    .i4 {
+        margin-left: 0px;
+    }
+
+    @@media only screen and (max-width:500px) {
+        #ls-global .ls-container, #ls-global .ls-container .ls-bottom-nav-wrapper, #ls-global .ls-container .ls-bottom-nav-wrapper *, #ls-global .ls-container .ls-bottom-nav-wrapper span *, #ls-global .ls-container .ls-slide-transition-wrapper, #ls-global .ls-container .ls-slide-transition-wrapper *, #ls-global .ls-direction-fix, body .ls-container, body .ls-container .ls-bottom-nav-wrapper, body .ls-container .ls-bottom-nav-wrapper *, body .ls-container .ls-bottom-nav-wrapper span *, body .ls-container .ls-slide-transition-wrapper, body .ls-container .ls-slide-transition-wrapper *, body .ls-direction-fix, html .ls-container, html .ls-container .ls-bottom-nav-wrapper, html .ls-container .ls-bottom-nav-wrapper *, html .ls-container .ls-bottom-nav-wrapper span *, html .ls-container .ls-slide-transition-wrapper, html .ls-container .ls-slide-transition-wrapper *, html .ls-direction-fix {
+            direction: ltr !important;
+            margin-top: 85px;
+        }
+
+        .gutterBoxCon {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .videoCon {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .backgroundImgCon {
+            padding: 0px;
+        }
+
+        .vs-btn.style2 {
+            margin-top: 10px;
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    .heightAuto {
+        height: auto;
+    }
+
+    .ellipse {
+        white-space: nowrap;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .two-lines {
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+
+    .width {
+        width: 100%;
+    }
+
+    .h2 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .counter-box-layout3 .row > div:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        height: 100px;
+        width: 1px;
+        border-right: 1px dashed;
+        margin-top: -50px;
+        border-color: inherit;
+        display: none;
+    }
+
+    .counter-box-layout3 .row > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .guttersCon {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 80.5%;
+        margin-left: 435px;
+    }
+
+    .buttonCon {
+        width: 14.7%;
+        border: 1px solid rgb(119 239 243) !important;
+        border-radius: 25px;
+        margin-left: 27px;
+        background: rgb(68, 192, 196) !important;
+        box-shadow: 0px 0px 5px #212e40;
+    }
+
+    .txtLogin {
+        margin-left: -40px;
+    }
+
+    .txtApply {
+        margin-left: -40px;
+    }
+
+    .logoCon {
+        width: 60%;
+        margin-top: 25px;
+    }
+
+    @@media only screen and (max-width: 600px) {
+        .guttersCon {
+            padding: 20px;
+            width: 100%;
+            margin-left: auto;
+        }
+
+        .buttonCon {
+            width: 100%;
+            border: 1px solid;
+            border-radius: 25px;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-left: -120px
+        }
+
+        .align-items-center {
+            -ms-flex-align: center !important;
+            -webkit-box-align: center !important;
+            -webkit-align-items: center !important;
+            align-items: center !important;
+            margin-top: 0px;
+        }
+
+        .alineLeftCon1 {
+            margin-left: -120px;
+        }
+
+        .alineLeftCon2 {
+            margin-left: -210px;
+        }
+
+        .alineLeftCon3 {
+            margin-left: -150px;
+        }
+
+        .alineLeftCon4 {
+            margin-left: -80px;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: 0px;
+            margin-left: 5px;
+        }
+
+        .logoCon {
+            width: 60%;
+            margin-top: 0px;
+        }
+
+        .carousel-container .slick-list {
+            overflow: visible;
+            width: 100%;
+        }
+
+        .videoCon {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .vs-btn.style2:hover {
+        border: 1px solid;
+    }
+
+    .bxshadow {
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+</style>
+
+<section class="vs-hero-wrapper vs-hero-layout4" style="margin-top:100px;">
+    <div class="vs-hero-carousel ls-v6 ls-container ls-fullwidth ls-device-is-desktop" data-height="800" data-responsiveunder="1920" data-container="1920"
+         data-bigwidth="100%" data-slidertype="responsive" data-navprevnext="true" data-current-slide="1">
+        @if (Model.isBannerImageAllow)
+        {
+            <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1;">
+                <img src="~/assets/img/hero/banner_1.jpg" alt="Slide Background" class="ls-bg">
+                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 13%; top: 56%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 18%; top: 16%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            </div>
+            <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1;">
+                <img src="~/assets/img/hero/banner_2.jpg" alt="Slide Background" class="ls-bg">
+                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 13%; top: 56%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 18%; top: 16%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+                <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            </div>
+        }
+
+        <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1;">
+            <img src="~/assets/img/hero/banner_3.jpg" alt="Slide Background" class="ls-bg">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 13%; top: 56%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 18%; top: 16%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+        </div>
+        <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1;">
+            <img src="~/assets/img/hero/banner_4.jpg" alt="Slide Background" class="ls-bg">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 13%; top: 56%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 18%; top: 16%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 3000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+        </div>
+    </div>
+</section>
+
+@if (Model.Documents.Any())
+{
+
+    <section class="vs-estimate-form estimate-form-layout1 service-layout4 bg-secondary border-primary pt-60 pb-30 vs-hero-wrapper vs-hero-layout4" id="estimate">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-9 col-xl-7">
+                    <div class="section-title2">
+                        <span class="icon">
+                            <img src="~/assets/img/icon/messages.png" style="width: 20%;"
+                                 alt="Section Title Icons">
+                            <i class="line"></i> <i class="line-2"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div action="#" class="estimate-form input-style2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-9 col-xl-8">
+                        <div class="form-title">
+                            <h2 class="title1 mb-10 mb-lg-25 h2 LatestNews">Latest News</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row vs-carousel" data-slidetoshow="3" data-centermode="true" data-loop="false" data-arrows="true" data-prevarrow="far fa-arrow-left" data-nextarrow="far fa-arrow-right" data-mlslidetoshow="3" data-lgslidetoshow="2" data-mdslidetoshow="2" data-smslidetoshow="1" data-xsslidetoshow="1">
+                        @foreach (var item in Model.Documents)
+                        {
+                            <div class="col-xl-4">
+                                <div class="vs-service" style="height:165px;">
+                                    <div class="service-content">
+                                        <h3 class="title heading4 mb-15 ellipse two-lines width" data-toggle="tooltip" title="@item.DocumentName">
+                                            @item.DocumentName
+                                        </h3>
+                                        <a href="@ViewBag.pbLabourAdminStaticBaseUrl/uploads/@item.UploadedFileName" class="link-btn ReadMore" target="_blank">
+                                            Read More<i class="fas fa-long-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="col-lg-12">
+                        <div style="float:right;">
+                            <a href="@Url.Action("Notification", "Profile")" class="link-btn More" tabindex="0">
+                                For All Notifications<i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+}
+<section class="vs-service-wrappper service-layout4 pt-60 pb-lg-1300" id="service">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-7">
+                <div class="section-title2">
+                    <h2 class="title1 OurService h2">Our Services</h2>
+                    <span class="icon">
+                        <img src="~/assets/img/icon/section-title-icon-1.png" style="width: 20%;"
+                             alt="Section Title Icons">
+                        <i class="line"></i> <i class="line-2"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row vs-carousel" data-slidetoshow="3" data-centermode="true" data-loop="false" data-arrows="true" data-prevarrow="far fa-arrow-left" data-nextarrow="far fa-arrow-right" data-mlslidetoshow="3" data-lgslidetoshow="2" data-mdslidetoshow="2" data-smslidetoshow="1" data-xsslidetoshow="1">
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@Url.Action("NightShift", "Service")"><img src="~/assets/img/icon/women.jpeg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/night.png"
+                                 class="logoCon">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@Url.Action("NightShift", "Service")" class="">Permission for Night Shift</a>
+                        </h3>
+                        <p class="text ">Permission for Women to Work at Night Shift under Factories/Shop Act.</p>
+                        <a href="@Url.Action("NightShift", "Service")" class="link-btn ReadMore">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@Url.Action("BuildingPlanApproval", "Service")"><img src="~/assets/img/icon/building1.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/building.png"
+                                 class="logoCon">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@Url.Action("BuildingPlanApproval", "Service")" class="BuildingPlan">Building Plan Approval</a>
+                        </h3>
+                        <p class="text BuildingPlanTxt">Building Plans approval under Factories Act, 1948.</p>
+                        <a href="@Url.Action("BuildingPlanApproval", "Service")" class="link-btn ReadMore">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@Url.Action("FactoryLicence", "Service")"><img src="~/assets/img/icon/factory1.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/factory.png"
+                                 class="logoCon">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@Url.Action("FactoryLicence", "Service")" class="FactoriesAct">
+                                Factories Act, 1948
+                            </a>
+                        </h3>
+                        <p class="text FactoriesActTxt">Registeration, Renewal and Amendments of Licence.</p><a href="@Url.Action("FactoryLicence", "Service")" class="link-btn ReadMore1">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@Url.Action("ShopsCommercial", "Service")"><img src="~/assets/img/icon/shop1.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/shop.png"
+                                 class="logoCon">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@Url.Action("ShopsCommercial", "Service")" class="Shops">Shops/Comm. Est. Act, 1958.</a>
+                        </h3>
+                        <p class="text ShopsTxt">Registeration and Amendments.</p><a href="@Url.Action("ShopsCommercial", "Service")" class="link-btn ReadMore2">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@Url.Action("ContractLabour", "Service")"><img src="~/assets/img/icon/labour1.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/laborers.png"
+                                 class="logoCon">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@Url.Action("ContractLabour", "Service")" class="ContractLabour">Contract Labour Act, 1970</a>
+                        </h3>
+                        <p class="text ContractLabourTxt">Registration of Establishment employing contractors.</p><a href="@Url.Action("ContractLabour", "Service")" class="link-btn ReadMore3">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@Url.Action("InterStateMigrantWorkmen", "Service")"><img src="~/assets/img/icon/interstate.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/refugee.png"
+                                 class="logoCon">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@Url.Action("InterStateMigrantWorkmen", "Service")" class="InterState">Inter State Migrant Workmen</a>
+                        </h3>
+                        <p class="text InterStateTxt">Licensing, Renewal and Amendments.</p><a href="@Url.Action("InterStateMigrantWorkmen", "Service")" class="link-btn ReadMore4">
+                            Read
+                            More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@Url.Action("BOCW", "Service")"><img src="~/assets/img/icon/constructionworker.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/worker.png" class="logoCon">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@Url.Action("BOCW", "Service")" class="BOCW">BOCW</a>
+                        </h3>
+                        <p class="text BOCWTxt">Registration and Amendments.</p><a href="@Url.Action("BOCW", "Service")" class="link-btn ReadMore5">Read More<i class="fas fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@Url.Action("MotorTransport", "Service")"><img src="~/assets/img/icon/motortransport.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/transportation.png"
+                                 class="logoCon">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@Url.Action("MotorTransport", "Service")" class="Motor">Motor Transport Workers Act, 1961</a>
+                        </h3>
+                        <p class="text MotorTxt">Licensing, Renewal and Amendments.</p><a href="@Url.Action("MotorTransport", "Service")" class="link-btn ReadMore6">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@Url.Action("TradeUnion", "Service")"><img src="~/assets/img/icon/trading.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/stock.png" class="logoCon">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@Url.Action("TradeUnion", "Service")" class="Trade">Trade Unions Act, 1926</a>
+                        </h3>
+                        <p class="text TradeTxt">Registration and Amendments.</p><a href="@Url.Action("TradeUnion", "Service")" class="link-btn ReadMore7">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@Url.Action("FormsAndProcedures", "Service")"><img src="~/assets/img/icon/forms.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/checklist.png" class="logoCon">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@Url.Action("FormsAndProcedures", "Service")" class="Forms">Forms & Procedures</a>
+                        </h3>
+                        <p class="text FormsTxt">Registration and Inspection under various Labour Lows.</p><a href="@Url.Action("FormsAndProcedures", "Service")" class="link-btn ReadMore8">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="vs-subscribe-form-wrap subscribe-form-layout1 bg-white border-primary py-40 py-lg-80">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <form action="#" class="input-style2">
+                    <div class="row align-items-center">
+                        <div class="form-group col-md-3 text-center text-md-left mb-0">
+                            <button class="vs-btn style2 col-12"><span class="btn-text NewUser"><a href="https://pbindustries.gov.in/webportal/usermanagement/investorregister">Create New User<span class="i1"><i class="far fa-user-plus"></i></span></a></span><span class="btn-bg" style="top: 308.438px; left: 128.984px;"></span></button>
+                        </div>
+                        <div class="form-group col-md-3 text-center text-md-left mb-0">
+                            <button class="vs-btn style2 col-12"><span class="btn-text IndustryLogin"><a href="https://pbindustries.gov.in/webportal/login"> Login<span class="i2"><i class="far fa-sign-in"></i></span></a></span><span class="btn-bg" style="top: 308.438px; left: 128.984px;"></span></button>
+                        </div>
+                        <div class="form-group col-md-3 text-center text-md-left mb-0">
+                            <button class="vs-btn style2 col-12"><span class="btn-text ApplyProcedure"><a href="@Url.Action("SampleAppFillProcess", "Home")">How to Apply<span class="i3"><i class="far fa-tasks"></i></span></a></span><span class="btn-bg" style="top: 308.438px; left: 128.984px;"></span></button>
+                        </div>
+                        <div class="form-group col-md-3 text-center text-md-left mb-0">
+                            <button class="vs-btn style2 col-12 "><span class="btn-text ThirdParty"><a href="https://pblabour.gov.in/eLabour/Account/ApplicationStatus">Third Party Verification<span class="i4"></span><i class="far fa-check"></i></a></span><span class="btn-bg" style="top: 308.438px; left: 128.984px;"></span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@*<section class="vs-work-process work-process-layout3 border-primary" data-overlay="primary" id="process">
+        <div class="inner-wrapper">
+            <div class="counter-box-layout3 bg-white">
+                <div class="row guttersCon">
+                    <div class="border-primary buttonCon">
+                        <div class="counter-box d-flex align-items-center alineLeftCon1">
+                            <div class="counter-icon mr-20" data-overlay="primary">
+                                <span class="text-primary">
+                                    <i class="fa fa-user-plus" aria-hidden="true" style="color:white"></i>
+                                </span>
+                            </div>
+                            <a href="https://pbindustries.gov.in/webportal/usermanagement/investorregister" style="z-index:9999;">
+                                <div class="counter-content"><span class="text mb-0 NewUser" style="color:white">Create New User</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border-primary buttonCon">
+                        <div class="counter-box d-flex align-items-center alineLeftCon2 txtLogin" style="">
+                            <div class="counter-icon mr-20" data-overlay="primary">
+                                <span class="text-primary">
+                                    <i class="fa fa-sign-in" aria-hidden="true" style="color:white"></i>
+                                </span>
+                            </div>
+                            <a href="https://pbindustries.gov.in/webportal/login" style="z-index:9999;">
+                                <div class="counter-content">
+                                    <span class="text mb-0 IndustryLogin" style="color:white">Login</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border-primary buttonCon">
+                        <div class="counter-box d-flex align-items-center alineLeftCon3 txtApply">
+                            <div class="counter-icon mr-20" data-overlay="primary">
+                                <span class="text-primary">
+                                    <i class="fa fa-tasks" aria-hidden="true" style="color:white"></i>
+                                </span>
+                            </div>
+                            <a href="@Url.Action("SampleAppFillProcess", "Home")" style="z-index:9999;">
+                                <div class="counter-content"><span class="text mb-0 ApplyProcedure" style="color:white">How to Apply</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border-primary buttonCon">
+                        <div class="counter-box d-flex align-items-center alineLeftCon4">
+                            <div class="counter-icon mr-20" data-overlay="primary">
+                                <span class="text-primary">
+                                    <i class="fa fa-check" aria-hidden="true" style="color:white"></i>
+                                </span>
+                            </div>
+                            <a href="https://pblabour.gov.in/eLabour/Account/ApplicationStatus" style="z-index:9999;">
+                                <div class="counter-content">
+                                    <span class="text mb-0 ThirdParty" style="color:white">Third Party Verification</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+<section class="vs-work-process process-layout4 bg-light pt-60 pb-30 pb-lg-100">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-7">
+                <div class="section-title2">
+                    <h2 class="title1 OurProfile h2">About Us</h2>
+                    <span class="icon">
+                        <img src="~/assets/img/icon/distributed.png" style="width: 20%;"
+                             alt="Section Title Icons">
+                        <i class="line"></i> <i class="line-2"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-container="3" data-mdslidetoshow="2" data-smslidetoshow="2" data-xsslidetoshow="1">
+            <div class="col-xl-4">
+                <div class="vs-process bg-white" style="border-radius:20px">
+                    <span class="process-number text-primary3">01</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/hierarchy.png" style="width: 30%;"></i>
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4">
+                        <a href="@Url.Action("OrgStructure", "Profile")" class="Organisation">
+                            Organisation
+                            Structure
+                        </a>
+                    </h3>
+                    <p class="text mb-15 OrganisationTxt">
+                        Organisation Structure of the Department...
+                    </p><a href="@Url.Action("OrgStructure", "Profile")" class="link-btn font-light Learn">
+                        Learn More<i class="fas fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-process bg-white" style="border-radius:20px">
+                    <span class="process-number text-primary3">02</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/mechanic.png" style="width: 30%;">
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4"><a href="http://bocw.punjab.gov.in/bocwstatic" target="_blank" class="BOCW1">BOCW</a></h3>
+                    <p class="text mb-15 BOCW1Txt">
+                        Registration of Construction Workers in the State of Punjab
+                    </p><a href="http://bocw.punjab.gov.in/bocwstatic" target="_blank" class="link-btn font-light Learn1">Learn More<i class="fas fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-process bg-white" style="border-radius:20px">
+                    <span class="process-number text-primary3">03</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/presentation.png" style="width: 30%;">
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4"><a href="@Url.Action("PunjabWelfareBoard", "Profile")" class="Punjab">Punjab Welfare Board</a></h3>
+                    <p class="text mb-15 PunjabTxt">
+                        Registration of Industrial workers in the State of Punjab
+                    </p><a href="@Url.Action("PunjabWelfareBoard", "Profile")" class="link-btn font-light Learn2">
+                        Learn More<i class="fas fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-process bg-white" style="border-radius:20px">
+                    <span class="process-number text-primary3">04</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/factory.png" style="width: 30%;">
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4">
+                        <a href="@Url.Action("FactoryWing", "Profile")" class="Right">
+                            Factory Wing
+                        </a>
+                    </h3>
+                    <p class="text mb-15 RightTxt">
+                        An Act to provide information to the citizens under factory wing Act.
+                    </p><a href="@Url.Action("FactoryWing", "Profile")" class="link-btn font-light Learn3">
+                        Learn More<i class="fas fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-process bg-white" style="border-radius:20px">
+                    <span class="process-number text-primary3">05</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/laborers.png" style="width: 30%;">
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4">
+                        <a href="@Url.Action("LabourWing", "Profile")" class="Right1">
+                            Labour Wing
+                        </a>
+                    </h3>
+                    <p class="text mb-15 Right1Txt">
+                        An Act to provide services to the people of the state within time limits...
+                    </p><a href="@Url.Action("LabourWing", "Profile")" class="link-btn font-light Learn4">
+                        Learn More<i class="fas fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-process bg-white" style="border-radius:20px">
+                    <span class="process-number text-primary3">06</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/inspection.png" style="width: 30%;">
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4">
+                        <a href="http://www.pbinspections.gov.in/" class="Tenders">
+                            CIS Punjab
+                        </a>
+                    </h3>
+                    <p class="text mb-15 TendersTxt">
+                        Tender information to provide tenders documents and public notice...
+                    </p><a href="http://www.pbinspections.gov.in/" class="link-btn font-light Learn5">
+                        Learn More<i class="fas fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*@if (Model.Documents.Any())
+    {
+        <section class="vs-about-us-wrap vs-about-us-layout3 pt-60 pt-lg-130 pb-lg-130" id="about">
+            <div class="container">
+                <div class="row gutters-50">
+                    <div class="col-lg-6">
+                        <div class="widget widget_categories">
+                            <h3 class="widget_title WhtNew">What's New</h3>
+                            <ul>
+                                @foreach (var item in Model.Documents)
+                                {
+                                    <li data-toggle="tooltip" title="@item.DocumentName">
+                                        <p>
+                                            <a href="@ViewBag.pbLabourAdminStaticBaseUrl/uploads/@item.UploadedFileName" target="_blank">
+                                                @item.DocumentName
+                                            </a>
+                                        </p><span> @(countWhatsNew++)</span>
+                                    </li>
+                                }
+                            </ul>
+                            <a href="@Url.Action("Notification", "Profile")" class="link-btn More" tabindex="0">
+                                For More<i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-center mb-30">
+                        <div class="widget widget_categories">
+                            <h3 class="widget_title NewNoti">Notifications</h3>
+                            <ul>
+                                @foreach (var item in Model.Documents)
+                                {
+                                    <li data-toggle="tooltip" title="@item.DocumentName">
+                                        <p>
+                                            <a href="@ViewBag.pbLabourAdminStaticBaseUrl/uploads/@item.UploadedFileName" target="_blank">
+                                                @item.DocumentName
+                                            </a>
+                                        </p> <span> @(countNewNoti++)</span>
+                                    </li>
+                                }
+                            </ul>
+                            <a href="@Url.Action("Notification", "Profile")" class="link-btn More1" tabindex="0">
+                                For More<i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }*@
+@*<section class="vs-testimonial-wrapper vs-testimonial-layout2 background-image pt-60 pb-lg-130" data-vs-img="assets/img/bg-img/digitalsign.png" style="background-image: url(&quot;assets/img/bg-img/digitalsign.png&quot;);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-7">
+                    <div class="section-title2 pb-lg-20">
+                        <h2 class="title sign h2">How To Add Digital Signature</h2>
+                        <span class="icon">
+                            <img src="~/assets/img/icon/digital-signature.png" style="width: 20%;"
+                                 alt="Section Title Icons">
+                            <i class="line"></i> <i class="line-2"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-6" style="margin-left:auto;margin-right:auto;">
+                <div class="vs-blog format-video">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="~/assets/img/video/digital_signature.jpg" alt="Blog Image" class="w-100">
+                        </a>
+                        <a href="~/assets/img/video/DigitalSignatureCertificate.mp4" class="play-btn overlay-center popup-video">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+<section class="vs-service-wrappper service-layout4 " id="service">
+    <div class="background-image backgroundImgCon" data-vs-img="assets/img/bg-img/bg-img-3-1.png" style="background-image: url(&quot;assets/img/bg-img/bg-img-3-1.png&quot;);">
+        <section class="vs-service-wrapper service-box-layout3 pt-5 pt-md-3 pt-lg-5 pt-xl-0 pb-30 pb-lg-100" id="service">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-xl-7">
+                        <div class="section-title3">
+                            <h2 class="title1 GalleryPhoto">Gallery Photographs</h2>
+                            <span class="icon mb-25"><img src="assets/img/icon/gallery.png" style="width:30%" alt="Section Title Icons"> <i class="line"></i> <i class="line-2"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-container">
+                <div class="row vs-carousel" data-slidetoshow="3" data-centermode="true" data-loop="false" data-arrows="true" data-prevarrow="far fa-arrow-left" data-nextarrow="far fa-arrow-right" data-mlslidetoshow="3" data-lgslidetoshow="2" data-mdslidetoshow="2" data-smslidetoshow="1" data-xsslidetoshow="1">
+                    @if (Model.isGailaryImageAllow)
+                    {
+                        <div class="col-xl-4">
+                            <div class="vs-service" style="height:300px;">
+                                <div class="service-image">
+                                    <a class="bg-theme popup-image"
+                                       href="~/assets/img/Gallery/10.jpg">
+                                        <img src="~/assets/img/Gallery/thumb/10.jpg" alt="Service Image" class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="vs-service" style="height:300px;">
+                                <div class="service-image">
+                                    <a class="bg-theme popup-image"
+                                       href="~/assets/img/Gallery/11.jpg">
+                                        <img src="~/assets/img/Gallery/thumb/11.jpg" alt="Service Image" class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="vs-service" style="height:300px;">
+                                <div class="service-image">
+                                    <a class="bg-theme popup-image"
+                                       href="~/assets/img/Gallery/12.jpg">
+                                        <img src="~/assets/img/Gallery/thumb/12.jpg" alt="Service Image" class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="vs-service" style="height:300px;">
+                                <div class="service-image">
+                                    <a class="bg-theme popup-image"
+                                       href="~/assets/img/Gallery/13.jpg">
+                                        <img src="~/assets/img/Gallery/thumb/13.jpg" alt="Service Image" class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="vs-service" style="height:300px;">
+                                <div class="service-image">
+                                    <a class="bg-theme popup-image"
+                                       href="~/assets/img/Gallery/14.jpg">
+                                        <img src="~/assets/img/Gallery/thumb/14.jpg" alt="Service Image" class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="vs-service" style="height:300px;">
+                                <div class="service-image">
+                                    <a class="bg-theme popup-image"
+                                       href="~/assets/img/Gallery/15.jpg">
+                                        <img src="~/assets/img/Gallery/thumb/15.jpg" alt="Service Image" class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="vs-service" style="height:300px;">
+                                <div class="service-image">
+                                    <a class="bg-theme popup-image"
+                                       href="~/assets/img/Gallery/16.jpg">
+                                        <img src="~/assets/img/Gallery/thumb/16.jpg" alt="Service Image" class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/1.jpeg">
+                                    <img src="~/assets/img/Gallery/1.jpeg" alt="Service Image" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/2.jpeg">
+                                    <img src="~/assets/img/Gallery/2.jpeg" alt="Service Image" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/3.jpeg">
+                                    <img src="~/assets/img/Gallery/3.jpeg" alt="Service Image" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/4.jpeg">
+                                    <img src="~/assets/img/Gallery/4.jpeg" alt="Service Image" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/5.jpeg">
+                                    <img src="~/assets/img/Gallery/5.jpeg" alt="Service Image" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/6.jpeg">
+                                    <img src="~/assets/img/Gallery/6.jpeg" alt="Service Image" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/7.jpeg">
+                                    <img src="~/assets/img/Gallery/7.jpeg" alt="Service Image" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/8.jpg">
+                                    <img src="~/assets/img/Gallery/8.jpg" alt="Service Image" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:300px;">
+                            <div class="service-image">
+                                <a class="bg-theme popup-image"
+                                   href="~/assets/img/Gallery/9.jpg">
+                                    <img src="~/assets/img/Gallery/9.jpg" alt="Service Image" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+<section class="vs-service-wrappper service-layout4" id="service">
+    <div class="background-image backgroundImgCon" data-vs-img="assets/img/bg-img/digitalsign.png" style="background-image: url(&quot;assets/img/bg-img/digitalsign.png&quot;);">
+        <section class="vs-service-wrapper service-box-layout3 pt-5 pt-md-3 pt-lg-5 pt-xl-0 pb-30 pb-lg-100" id="service">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-xl-7">
+                        <div class="section-title3">
+                            <h2 class="title1 GalleryVideos">Gallery Videos</h2><span class="icon mb-25"><img src="assets/img/icon/galleryvideo.png" style="width:30%" alt="Section Title Icons"> <i class="line"></i> <i class="line-2"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-container">
+                <div class="row vs-carousel" data-slidetoshow="3" data-centermode="true" data-loop="false" data-arrows="true" data-prevarrow="far fa-arrow-left" data-nextarrow="far fa-arrow-right" data-mlslidetoshow="3" data-lgslidetoshow="2" data-mdslidetoshow="2" data-smslidetoshow="1" data-xsslidetoshow="1">
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:230px;">
+                            <div class="service-image">
+                                <div class="vs-blog format-video">
+                                    <div class="blog-img">
+                                        <a href="#">
+                                            <img src="~/assets/img/video/1.jpg" alt="Blog Image" class="w-100">
+                                        </a>
+                                        <a href="~/assets/img/video/1.mp4" class="play-btn overlay-center popup-video">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:230px;">
+                            <div class="service-image">
+                                <div class="vs-blog format-video">
+                                    <div class="blog-img">
+                                        <a href="#">
+                                            <img src="~/assets/img/video/2.jpg" alt="Blog Image" class="w-100">
+                                        </a>
+                                        <a href="~/assets/img/video/2.mp4" class="play-btn overlay-center popup-video">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:230px;">
+                            <div class="service-image">
+                                <div class="vs-blog format-video">
+                                    <div class="blog-img">
+                                        <a href="#">
+                                            <img src="~/assets/img/video/1.jpg" alt="Blog Image" class="w-100">
+                                        </a>
+                                        <a href="~/assets/img/video/1.mp4" class="play-btn overlay-center popup-video">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:230px;">
+                            <div class="service-image">
+                                <div class="vs-blog format-video">
+                                    <div class="blog-img">
+                                        <a href="#">
+                                            <img src="~/assets/img/video/2.jpg" alt="Blog Image" class="w-100">
+                                        </a>
+                                        <a href="~/assets/img/video/2.mp4" class="play-btn overlay-center popup-video">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:230px;">
+                            <div class="service-image">
+                                <div class="vs-blog format-video">
+                                    <div class="blog-img">
+                                        <a href="#">
+                                            <img src="~/assets/img/video/1.jpg" alt="Blog Image" class="w-100">
+                                        </a>
+                                        <a href="~/assets/img/video/1.mp4" class="play-btn overlay-center popup-video">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:230px;">
+                            <div class="service-image">
+                                <div class="vs-blog format-video">
+                                    <div class="blog-img">
+                                        <a href="#">
+                                            <img src="~/assets/img/video/2.jpg" alt="Blog Image" class="w-100">
+                                        </a>
+                                        <a href="~/assets/img/video/2.mp4" class="play-btn overlay-center popup-video">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:230px;">
+                            <div class="service-image">
+                                <div class="vs-blog format-video">
+                                    <div class="blog-img">
+                                        <a href="#">
+                                            <img src="~/assets/img/video/1.jpg" alt="Blog Image" class="w-100">
+                                        </a>
+                                        <a href="~/assets/img/video/1.mp4" class="play-btn overlay-center popup-video">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:230px;">
+                            <div class="service-image">
+                                <div class="vs-blog format-video">
+                                    <div class="blog-img">
+                                        <a href="#">
+                                            <img src="~/assets/img/video/2.jpg" alt="Blog Image" class="w-100">
+                                        </a>
+                                        <a href="~/assets/img/video/2.mp4" class="play-btn overlay-center popup-video">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="vs-service" style="height:230px;">
+                            <div class="service-image">
+                                <div class="vs-blog format-video">
+                                    <div class="blog-img">
+                                        <a href="#">
+                                            <img src="~/assets/img/video/2.jpg" alt="Blog Image" class="w-100">
+                                        </a>
+                                        <a href="~/assets/img/video/2.mp4" class="play-btn overlay-center popup-video">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+

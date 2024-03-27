@@ -1,0 +1,590 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+<style>      .GIGWMenu {
+    width: 100%;
+    display: none;
+    height: 150px;
+    margin-top: 115px;
+    position: fixed;
+    z-index: 9999999;
+}
+    .marginClass {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inner-list ul li:before {
+        content: none;
+        font-family: "Font Awesome 5 Pro";
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        box-shadow: 0px 5px 20px 0px rgb(17 180 245 / 15%);
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px;
+        color: rgb(68, 192, 196);
+        font-weight: 400;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    @@media only screen and (max-width:500px) {
+        .inner-list ul li:before {
+            content: none;
+            font-family: "Font Awesome 5 Pro";
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            box-shadow: 0px 5px 20px 0px rgb(17 180 245 / 15%);
+            text-align: center;
+            line-height: 35px;
+            font-size: 14px;
+            color: rgb(68, 192, 196);
+            font-weight: 400;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .marginClass {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+        }
+
+        .title1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+    }
+
+    .requireCon {
+        margin-top: -50px;
+    }
+
+    .imgCon {
+        width: 5%;
+        float: left;
+    }
+
+    .imgCon1 {
+        width: 7%;
+        float: left;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    .textCon {
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+
+    .flowChartCon {
+        margin-top: -50px;
+        margin-bottom: -130px;
+    }
+
+    .process-layout4 .vs-process {
+        position: relative;
+        padding: 15px 40px 28px 15px;
+        margin-bottom: 15px;
+        height: 300px;
+        border: 1px solid rgb(68, 192, 196);
+    }
+
+    .bg-light {
+        background-color: rgb(165 229 255 / 7%) !important;
+    }
+
+    .mainCon {
+        border: 1px solid rgba(17, 180, 245, 0.3);
+        background-color: rgba(17, 180, 245, 0.07);
+        width: 63%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding: 20px
+    }
+
+    @@media only screen and (max-width: 600px) {
+        .title1 {
+            font-size: 32px;
+        }
+
+        .requireCon {
+            margin-top: 0px;
+        }
+
+        .imgCon {
+            width: 20%;
+        }
+
+        .imgCon1 {
+            width: 20%;
+        }
+
+        .textCon {
+            text-align: left;
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+
+        .flowChartCon {
+            margin-top: 0px;
+            margin-bottom: -130px;
+        }
+
+        .process-layout4 .vs-process {
+            position: relative;
+            padding: 15px 40px 28px 15px;
+            margin-bottom: 15px;
+            height: 300px;
+            border: 1px solid rgb(68, 192, 196);
+        }
+
+        .mainCon {
+            width: 90%
+        }
+    }
+</style>
+
+<section class="vs-values-wrapper vs-values-layout1 py-60">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+        </div>
+    </div>
+</section>
+<section class="vs-values-wrapper vs-values-layout1">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-7">
+                <div class="section-title">
+                    <h2 class="title1">Principal Employer</h2>
+                    <span class="icon">
+                        <img src="../assets/img/icon/refugee.png" style="width: 20%;"
+                             alt="Section Title Icons">
+                    </span>
+                    <p class="text">Registration/Licensing of Migrant Workmen under The Interstate Migrant Workmen Act, 1979</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="mainCon">
+    <section class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area blog-comments-layout1">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/file.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name"><strong>Overview</strong></h4>
+                                    </div>
+                                    <div class="comment-author">
+                                        <h4 class="name" style="margin-left: 80px;">Principal Employer means:</h4>
+                                    </div>
+                                    <p class="text" style="margin-left: 80px;">
+                                        1. In relation to any office or department of the Government or a local authority, the head of that office, department or authority or such other officer as the Government or the local authority, as the case may
+                                        be, may specify in this behalf.
+                                    </p>
+                                    <p class="text" style="margin-left: 80px;">2. In relation to a mine, the owner or agent of the mine and where a person has been named as the manager of the factory under the Factories Act, 1948, the person so named.</p>
+                                    <p class="text" style="margin-left: 80px;">3. In relation to a mine, the owner or agent of the mine and where a person has been named as the manager of the mine, the person so named.</p>
+                                    <p class="text" style="margin-left: 80px;">4. In relation to any other establishment, any person is responsible for the supervision and control of the establishment.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon1"><img src="../assets/img/icon/timeline.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name"><strong>Time Line</strong>(RTS TimeLine)</h4>
+                                    </div>
+                                    <p class="text" style="margin-left: 100px;">
+                                        Every Registration Certificate shall be issued within 15 days of receipt of complete application.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section class="vs-testimonial-wrapper vs-testimonial-layout1 product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/folder.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name" style="margin-left: 100px;"><strong>Required documents</strong></h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row flex-row-reverse align-items-center">
+            <div class="col-lg-5 col-xl-6">
+                <div class="position-relative d-inline-block"><img class="zoom" src="../assets/img/logo-41.png"> </div>
+            </div>
+            <div class="col-lg-7 col-xl-6">
+                <div class="-about pt-4 pt-lg-0">
+                    <div class="inner-list">
+                        <ul>
+                            <li>
+                                <p>&#8801; Address proof of the establishment.</p>
+                                <p>&#8801; ID Proof of the Principle Employer.</p>
+                                <p>&#8801; Details of the manager of the contractor at the worksite mentioned.</p>
+                                <p>&#8801; Details of the directors/partners (in case of companies/firms) mentioned.</p>
+                                <p>&#8801; Details of the other person in-charge responsible for the supervision and control of the establishment.</p>
+                                <p>&#8801; Wok-order agreement with contractor.</p>
+                                <p>&#8801; Contractor’s details mentioned.</p>
+                                <p>&#8801; Number of migrant workmen employed through each contractor mentioned.</p>
+                                <p>&#8801; Affidavit/declaration on stamp paper.</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <div class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/rupee.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name" style="margin-left: 100px;"><strong>Fees for the Grant of Licence for One Year</strong></h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5></h5>
+            </div>
+            <div class="card-body table-border-style">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Maximum Number of workers to be employed on any day during the year</th>
+                                <th>Fees</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="table-success">
+                                <th>From 5 to 50</th>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <th>From 21 to 50</th>
+                                <td> 300</td>
+                            </tr>
+                            <tr class="table-warning">
+                                <th>From 51 upto 100</th>
+                                <td>600</td>
+                            </tr>
+                            <tr>
+                                <th>From 101 upto 200</th>
+                                <td>1200</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td><b>From 201 upto 400</b></td>
+                                <td>2400</td>
+                            </tr>
+                            <tr>
+                                <td><b>Above 400</b></td>
+                                <td>3000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-bottom: 50px; margin-top: 50px;">
+    <div class="divider-layout1">
+        <span class="icon">
+            <img src="../assets/img/icon/planning.png" style="width: 50%;"
+                 alt="Section Title Icons">
+        </span>
+    </div>
+</div>
+<section class="vs-values-wrapper vs-values-layout1" style="margin-top: 0px; margin-bottom: -100px;">
+    <div class="container">
+        <img src="../assets/img/Official/FlowChartISPE.png" alt="Section Title Icons">
+    </div>
+</section>
+
+<section class="vs-values-wrapper vs-values-layout1 py-60 py-lg-130" style="margin-top: -50px; margin-bottom: -130px;">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-7">
+                <div class="section-title">
+                    <h2 class="title1">Contract Labour</h2>
+                    <span class="icon">
+                        <img src="../assets/img/icon/mechanic.png" style="width: 20%;"
+                             alt="Section Title Icons">
+                    </span>
+                    <p class="text">Registration/Licensing of Migrant Workmen under The Interstate Migrant Workmen Act, 1979</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="mainCon">
+    <section class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area blog-comments-layout1">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/file.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name"><strong>Overview</strong></h4>
+                                    </div>
+                                    <div class="comment-author">
+                                        <h4 class="name" style="margin-left: 80px;">Principal Employer means:</h4>
+                                    </div>
+                                    <p class="text" style="margin-left: 80px;">1. To every establishment in which five or more Inter-State migrant workmen (whether or not in addition to other workmen) are employed or who were employed on any day of the preceding twelve months.</p><br>
+                                    <p class="text" style="margin-left: 80px;">2. To every contractor who employs or who employed five or more Inter-State migrant workmen (whether or not in addition to other workmen) on any day of the preceding twelve months</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon1"><img src="../assets/img/icon/timeline.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name"><strong>Time Line</strong>(RTS TimeLine)</h4>
+                                    </div>
+                                    <p class="text " style="margin-left:100px;">
+                                        Maximum Number of Days after complete application is submitted: 30 Days, Refund of Security 60 days,
+                                    </p>
+                                    <p class="text " style="margin-left:100px;">(As per notified at Sr. No. 228 and 229 under Right to Service Act, 2011).</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section class="vs-testimonial-wrapper vs-testimonial-layout1 product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/folder.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name" style="margin-left: 100px;"><strong>Required documents</strong></h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row flex-row-reverse align-items-center ">
+                <div class="col-lg-5 col-xl-6 ">
+                    <div class="position-relative d-inline-block "><img class="zoom " src="../assets/img/logo-41.png "> </div>
+                </div>
+                <div class="col-lg-7 col-xl-6 ">
+                    <div class="-about pt-4 pt-lg-0 ">
+                        <div class="inner-list ">
+                            <ul>
+                                <li>
+                                    <p>&#8801; Whether the contractor was convicted of any offence, within the proceeding five years.</p>
+                                    <p>&#8801; Whether there was any order against the contractor revoking or suspending licence or forfeiting <br> security deposits in respect of an earlier contract.if so the date of such order.</p>
+                                    <p>&#8801; Whether the contractor has worked in any other establishment within the past five years.if so,give details <br> of the Principal Employers,Establishments and nature of work.</p>
+                                    <p>&#8801; Whether a certificate by the Principal Employer is enclosed Form V.</p>
+                                    <p>&#8801; Particulars of security deposit, if any, to be adjusted.</p>
+                                </li>
+                                <br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <div class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/rupee.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name" style="margin-left: 100px;"><strong>Fees for the Grant of Licence for One Year</strong></h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header ">
+                <h5></h5>
+            </div>
+            <div class="card-body table-border-style ">
+                <div class="table-responsive ">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th>Maximum Number of workers to be employed on any day during the year</th>
+                                <th>Fees</th>
+                            </tr>
+                        </thead>
+                       <tbody>
+
+                            <tr class="table-success">
+                                <th>From 5 to 50</th>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <th>From 21 to 50</th>
+                                <td> 80</td>
+                            </tr>
+                            <tr class="table-warning">
+                                <th>From 51 upto 100</th>
+                                <td>160</td>
+                            </tr>
+                            <tr>
+                                <th>From 101 upto 200</th>
+                                <td>300</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td><b>From 201 upto 400</b></td>
+                                <td>600</td>
+                            </tr>
+                            <tr>
+                                <td><b>Above 400</b></td>
+                                <td>800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<section class="vs-values-wrapper vs-values-layout1 py-60 " style="margin-top: -50px;">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+        </div>
+    </div>
+</section>
+<div class="vs-subscribe-form-wrap subscribe-form-layout1 bg-secondary border-primary py-40 py-lg-80" style="border-bottom: none; margin: -10px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-xl-6">
+                <div class="cta-content text-center text-lg-left">
+                    <h2 class="cta-title" style="color:#08275a;">
+                        To <strong>Apply</strong>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-6">
+                <div class="cta-button text-center text-lg-right pt-4 pt-lg-0">
+                    <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/Interstate_CL.pdf" target="_blank" class="vs-btn style1 mb-3 mb-sm-0"><span class="btn-text">How To Apply<i class="far fa-reply"></i></span><span class="btn-bg" style="top: 222px; left: 175.469px;"></span></a>
+                    <a href="https://pbindustries.gov.in/webportal/" class="form-group col-md-4 text-center text-md-left mb-0" target="_blank"><span class="vs-btn style2">Click Here <i class="far fa-long-arrow-alt-right"></i></span><span class="btn-bg"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<div class="container " style="margin-top: -70px; margin-bottom: 80px; ">
+    <div class="divider-layout1 ">
+        <span class="icon ">
+            <img src="../assets/img/icon/planning.png " style="width: 50%; "
+                 alt="Section Title Icons ">
+        </span>
+    </div>
+</div>
+<section class="vs-values-wrapper vs-values-layout1 " style="margin-top: -50px; margin-bottom: -130px; ">
+    <div class="container ">
+        <img src="../assets/img/Official/FlowChartISCL.png " alt="Section Title Icons ">
+    </div>
+</section>
+<section class="vs-values-wrapper vs-values-layout1 py-60 " style="margin-top: -50px; ">
+    <div class="container ">
+        <div class="row justify-content-center text-center ">
+        </div>
+    </div>
+</section>
+*@

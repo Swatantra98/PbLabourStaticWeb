@@ -1,0 +1,1186 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+<!doctype html>
+<html lang="en">
+<!-- Mirrored from vecurosoft.com/products/html/clianio/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 10:10:34 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>eLabourPunjab</title>
+    <meta name="description" content="Orignal copyright for eLabourPunjab">
+    <meta name="author" content="Vecuro">
+    <meta name="keywords" content="Orignal copyright for eLabourPunjab">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="~/assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="~/assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="~/assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/assets/img/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="~/assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="~/assets/css/app.min.css">
+    <link rel="stylesheet" href="~/assets/css/flaticon.min.css">
+    <link rel="stylesheet" href="~/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="~/assets/css/spacing.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+                            .zoom {
+                                transition: all ease 500ms;
+                            }
+
+                                .zoom:hover {
+                                    transform: scale(1.1);
+                                }
+
+                            .pointer {
+                                cursor: pointer;
+                            }
+
+                            .font20 {
+                                font-size: 20px
+                            }
+
+                            .main-menu ul.submenu {
+                                min-width: 0px;
+                            }
+
+                            .fa {
+                                font-size: 22px;
+                                font-weight: 100;
+                                margin-top: 10px;
+                                color: rgb(68, 192, 196);
+                                margin-left: -21px;
+                            }
+
+                            .main-menu ul li:hover > ul.submenu {
+                                opacity: 1;
+                                visibility: visible;
+                                -webkit-transform: rotateX(0);
+                                transform: rotateX(0);
+                                margin-left: -30px;
+                                margin-top: 15px;
+                            }
+
+                            .Black {
+                                background: black;
+                            }
+
+                            .Grey {
+                                background: lightgrey;
+                            }
+
+                            .nice-select.small-btn {
+                                width: 120px;
+                                height: 36px;
+                                line-height: 36px;
+                                text-align: center;
+                                padding: 0 20px;
+                                border: 1px solid #09285b;
+                                float: left;
+                                margin-right: 0px;
+                            }
+
+                            .dropbtn {
+                                font-size: 22px;
+                                border: none;
+                                background: transparent;
+                            }
+
+                            .dropdown {
+                                position: relative;
+                                display: inline-block;
+                                width: 50%;
+                            }
+
+                            .dropdown-content {
+                                display: none;
+                                position: absolute;
+                                background-color: #f1f1f1;
+                                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                z-index: 1;
+                            }
+
+                                .dropdown-content a {
+                                    color: black;
+                                    padding: 12px 16px;
+                                    text-decoration: none;
+                                    display: block;
+                                }
+
+                                    .dropdown-content a:hover {
+                                        background-color: #ddd;
+                                    }
+
+                            .dropdown:hover .dropdown-content {
+                                display: block;
+                            }
+
+                            .header-layout4 .main-menu {
+                                -webkit-box-flex: 0;
+                                -webkit-flex: 0 0 60%;
+                                -ms-flex: 0 0 60%;
+                                flex: 0 0 75%;
+                                width: 30%;
+                            }
+
+                            .width {
+                                width: 30%
+                            }
+
+                            @@media only screen and (max-width:500px) {
+                                /* For mobile phones: */
+                                .col-8 {
+                                    -ms-flex: 0 0 54.666667%;
+                                    -webkit-flex: 0 0 54.666667%;
+                                }
+
+                                .header-logo4 {
+                                    text-align: left;
+                                }
+
+                                .fa {
+                                    font-size: 22px;
+                                    font-weight: 100;
+                                    margin-top: 10px;
+                                    color: rgb(68, 192, 196);
+                                    margin-left: 55px;
+                                }
+
+                                .counter-box-layout3 .counter-content .text {
+                                    line-height: 1;
+                                    display: block;
+                                    margin-left: 5px;
+                                }
+
+                                .align-items-center {
+                                    -ms-flex-align: center !important;
+                                    -webkit-box-align: center !important;
+                                    -webkit-align-items: center !important;
+                                    align-items: center !important;
+                                    margin-top: 13px;
+                                }
+
+                                .width {
+                                    width: 70%
+                                }
+                            }
+
+                            .rotateNoti {
+                                -webkit-animation: spin 4s linear infinite;
+                                -moz-animation: spin 4s linear infinite;
+                                animation: spinNoti 4s linear infinite;
+                            }
+
+                            @@-moz-keyframes spinNoti {
+                                100% {
+                                    -moz-transform: rotateY(360deg);
+                                }
+                            }
+
+                            @@-webkit-keyframes spinNoti {
+                                100% {
+                                    -webkit-transform: rotateY(360deg);
+                                }
+                            }
+
+                            @@keyframes spinNoti {
+                                100% {
+                                    -webkit-transform: rotateY(360deg);
+                                    transform: rotateY(360deg);
+                                }
+                            }
+
+                            .ulli{
+                                    height: 40px;
+                        display: inline-block;
+                        overflow: hidden;
+                        vertical-align: middle;
+                        margin-left: 10px;
+                        padding-right: 10px;
+                        border-right: 1px solid#F2F2F2;
+                            }
+                            .headerMenu{
+                                font-size: 16px;
+                                color:#09285b;
+                                margin-top:40px;
+                            }
+                            .headerMenu:hover{
+                                color: rgb(68, 192, 196);
+                                cursor:pointer:
+                            }
+
+                            .GIGWMenu{
+                                max-width:100%;
+                                min-width:100%;
+                                display:none;
+                                height:150px;
+                                margin-top:10px;
+                                position: fixed;
+                                z-index:9999999;
+                            }
+                            .GIGWMenuCon{
+                                z-index:999999999;
+                                  width:70%;
+                                  height:175px;
+                                  margin-left:auto;
+                                  margin-right:auto;
+                                  background-color: #fff;
+                                  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                                  border-radius: 5px;
+                                  padding-top: 20px;
+                            }
+                            .i1 {
+                    margin-left: 25px;
+                }
+                .screenreader{
+                    color:#09285b;
+                    font-weight:700;
+                }
+                a:hover {
+                    color:rgb(68, 192, 196) !important;
+                }
+                .icon-btn:hover {
+            border: 1px solid rgb(68, 192, 196);
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="preloader bg-primary3">
+        <div class="loader-inner">
+            <div class="loader">
+                <div class="line bg-primary"></div>
+                <div class="line bg-primary2"></div>
+                <div class="line bg-primary"></div>
+                <div class="line bg-primary2"></div>
+            </div>
+        </div><button class="loader-btn preloaderCls">Cancel Preloader</button>
+    </div>
+    <div class="popup-search-box d-none d-lg-block">
+        <button class="searchClose"><i class="fal fa-times"></i></button>
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" placeholder="What are you looking for"> <button type="submit">
+                <i class="fal fa-search"></i>
+            </button>
+        </form>
+    </div>
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <img src="~/assets/img/Punjab.png" class="zoom width" alt="eLabourPunjab">
+            </div>
+            <div class="vs-mobile-menu"></div>
+        </div>
+    </div>
+    <div id="GIGWMenu" class="GIGWMenu">
+        <div class="GIGWMenuCon">
+            <div class="row align-items-center">
+                <div class="col-7" style="text-align: center;">
+                    <h2>Change Text Size</h2>
+                    <button class="vs-btn style2 col-3" onclick="body.style.zoom='90%'" style="max-width:30%"><span class="btn-text IndustryLogin">A-<span class="i1" style="margin-left: 25px;"><i style="font-style: normal;">-</i></span></span><span class="btn-bg" style="top: 308.438px; left: 128.984px;"></span></button>
+                    <button class="vs-btn style2 col-3" onclick="body.style.zoom='100%'" style="max-width:30%"><span class="btn-text IndustryLogin">A<span class="i1" style="margin-left: 25px;"><i style="font-style: normal;">=</i></span></span><span class="btn-bg" style="top: 308.438px; left: 128.984px;"></span></button>
+                    <button class="vs-btn style2 col-3" onclick="body.style.zoom='115%'" style="max-width:30%"><span class="btn-text IndustryLogin">A+<span class="i1" style="margin-left: 25px;"><i style="font-style: normal;">+</i></span></span><span class="btn-bg" style="top: 308.438px; left: 128.984px;"></span></button>
+                </div>
+                <div class="col-5" style="text-align: center;">
+                    <h2>Change Color Contrast</h2>
+                    <button style="background-color: #222020; max-width:33%;  max-height: 50px;" class="vs-btn style2 col-4"><span class="btn-text IndustryLogin" id="btn-Black"><span>A</span><span class="i1" style="margin-left: 25px;"><i style="font-style: normal;">&#x2699;</i></span></span><span class="btn-bg" style="top: 308.438px; left: 128.984px;"></span></button>
+                    <button style="max-width:33%;  max-height: 50px;" class="vs-btn style2 col-4"><span class="btn-text IndustryLogin" id="btn-White"><span>A</span><span class="i1" style="margin-left: 25px;"><i style="font-style: normal;">&#x2699;</i></span></span><span class="btn-bg" style="top: 308.438px; left: 128.984px;"></span></button>
+                </div>
+                <div class="col-12" style="margin-top:10px; text-align: right;padding-right:30px;">
+                    <span class="screenreader">@Html.ActionLink("Screen Reader Access", "ScreenReader", "Home")</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="vs-header-wrapper header-layout4 position-absolute position-fixed py-2 py-md-3 py-lg-0" style="box-shadow:0px 0px 30px -15px black; ">
+        <div class="container-fluid position-relative px-xl-0">
+            <div class="row justify-content-between justify-content-xl-start align-items-center">
+                <div class="col-8 col-lg-3 col-xl-2">
+                    <div class="header-logo4">
+                        <a href="@Url.Action("Index", "Home")"><img src="~/assets/img/Punjab.png" class="zoom" style="width: 30%;" alt="Logo"></a>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-auto col-xl-1">
+                    <button class="vs-menu-toggle d-inline-block d-lg-none">
+                        <i class="far fa-bars"></i>
+                    </button>
+                </div>
+
+                <div class="col-lg-8 col-xl-9 position-static d-flex justify-content-around">
+                    <nav class="main-menu menu-style1 mobile-menu-active text-right text-xl-center">
+                        <ul>
+                            <li><p class="headerMenu">@Html.ActionLink("Home", "Index", "Home")</p></li>
+                            <li><p class="headerMenu">@Html.ActionLink("Dashboard", "Dashboard", "Home")</li>
+                            <li><p class="headerMenu">@Html.ActionLink("About Us", "Aboutus", "Home")</li>
+                            <li><p class="headerMenu">@Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
+                            <li class="mega-menu-wrap menu-item-has-children">
+                                @Html.ActionLink("Services", "", "")
+                                <ul class="mega-menu">
+                                    <li>
+                                        <a href="#">Profile</a>
+                                        <ul>
+                                            <li>@Html.ActionLink("Organisation Structure", "OrgStructure", "Profile")</li>
+                                            <li>@Html.ActionLink("Statistical Information", "StatisticalInfo", "Profile")</li>
+                                            <li>@Html.ActionLink("Notifications", "Notification", "Profile")</li>
+                                            <li>@Html.ActionLink("Act & Rules", "ActAndRules", "Profile")<span class="new-label">New</span></li>
+                                            <li>@Html.ActionLink("Right To Information", "RightToInformation", "Profile")</li>
+                                            <li>@Html.ActionLink("Right to Service Act, Punjab", "RightToInformationService", "Profile")</li>
+                                            <li>
+                                                <a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/PIOs.pdf" target="_blank">
+                                                    Public Information
+                                                    Officers
+                                                </a>
+                                            </li>
+                                            <li>@Html.ActionLink("Tenders & Public Notices", "TendersAndPublicNotices", "Profile")</li>
+                                            <li><a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/Instructions.rar" target="_blank">Instructions</a></li>
+                                            <li><a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/StatutoryBoards.pdf" target="_blank">Statutory Boards</a></li>
+                                            <li>@Html.ActionLink("Child Labour", "ChildLabour", "Profile")</li>
+                                            <li><a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/CitizenCharter.ppt" target="_blank">Citizen Charter</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/Jurisdiction.pdf" target="_blank">Jurisdiction</a></li>
+                                            <li>@Html.ActionLink("RFD", "RFD", "Profile")</li>
+                                            <li>@Html.ActionLink("CWP 11216 of 2010", "CWP", "Profile")</li>
+                                            <li>@Html.ActionLink("Factory Wing Reports and Notifications", "FactoryWingReportsandNotifications", "Profile")</li>
+                                            <li>
+                                                <a href="@Configuration.GetSection("AppPath")["BOCW"]">
+                                                    PUNJAB BUILDING AND OTHER CONSTRUCTION WORKERS WELFARE
+                                                    BOARD
+                                                </a>
+                                            </li>
+                                            <li><a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/Blockchain.pdf" target="_blank">Responsible-AI Blockchain</a></li>
+                                            <li><a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/eSignUserGuide.pdf" target="_blank">eSign User Guide</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                        <ul>
+                                            <li>
+                                                @Html.ActionLink("Night Shift Service", "NightShift", "Service")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Building Plan Approval", "BuildingPlanApproval", "Service")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Factories Act, 1948", "FactoryLicence", "Service")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Shops/Comm. Est.Act, 1958", "ShopsCommercial", "Service")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Contract Labour Act, 1970", "ContractLabour", "Service")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Inter State Migrant Workmen", "InterStateMigrantWorkmen", "Service")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Building and Other Construction Work Act, 1996", "BOCW", "Service")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Motor Transport Workers Act, 1961", "MotorTransport", "Service")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Trade Unions Act, 1926", "TradeUnion", "Service")
+                                            </li>
+
+                                            @*<li>
+                                            @Html.ActionLink("Forms & Procedures", "FormsAndProcedures", "Service")
+                                            </li>*@
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Branches</a>
+                                        <ul>
+                                            <li>@Html.ActionLink("Factory Wing", "FactoryWing", "Branches")</li>
+                                            <li><a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/pdf.rar" target="_blank">Estt. Branch </a></li>
+                                            <li>
+                                                <a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/LabourDeptt.pdf" target="_blank">Estt.Branch(2)</a>
+                                            </li>
+                                            <li><a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/pdf1.zip" target="_blank">Estt.Branch(3)</a></li>
+                                            <li><a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/feburary.rar" target="_blank">Dispute</a></li>
+                                            <li>
+                                                <a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/DisputesAndImp.pdf" target="_blank">Implementation</a>
+                                            </li>
+                                            <li>@Html.ActionLink("Accounts And Finance", "AccountsAndFinance", "Branches")</li>
+                                            <li><a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/labour.pdf" target="_blank">Miscellaneous</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Public Interface</a>
+                                        <ul>
+                                            <li>@Html.ActionLink("Functions & Activities", "FunctionsAndActivities", "PublicInterface")</li>
+                                            <li>@Html.ActionLink("Services Provided", "ServicesProvided", "PublicInterface")</li>
+                                            <li>@Html.ActionLink("Forms & Procedures", "FormsAndProcedures", "PublicInterface")</li>
+                                            <li>
+                                                <a href="@Configuration.GetSection("AppPath")["FileMenuPath"]/SelfCertificationScheme.pdf" target="_blank">
+                                                    Self
+                                                    Certification Scheme
+                                                </a>
+                                            </li>
+                                            <li>@Html.ActionLink("3rd Party Validations", "ThirdPartyVerification", "PublicInterface")</li>
+                                            <li><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/CSCInformation.pdf">Information of all CSCs in Punjab for e-SHRAM registration</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                @Html.ActionLink("Login", "", "")
+                                <ul class="submenu">
+                                    <li><a href="@Configuration.GetSection("AppPath")["AdminLogin"]">Admin Login</a></li>
+                                    <li><a href="@Configuration.GetSection("AppPath")["IndustryLogin"]">Industry Login</a></li>
+                                    <li><a href="@Configuration.GetSection("AppPath")["Login"]">Officer Login</a></li>
+                                    <li><a href="@Configuration.GetSection("AppPath")["Login"]">Industry Login<br /><span style="color:red;">(LWF/UnpaidWages/TradeUnion/WelfareScheme) </span></a></li>
+                                    <li><a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/CSCInformation.pdf">Information of all CSCs in Punjab for e-SHRAM registration</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-right d-none d-xl-flex justify-content-end">
+                        <div class="align-self-center header-button col-6">
+                            <a href="@Url.Action("ScreenReader", "Home")" class="icon-btn" data-toggle="tooltip" title="Screen Reader Access" target="_blank">
+                                <i class="fa fa-cog" aria-hidden="true" style=" margin-left: 0px;"></i>
+                            </a>
+                            <a href="#" class="icon-btn searchBoxTggler">
+                                <i class="far fa-search"></i>
+                            </a>
+                            <a href="#" class="icon-btn sideMenuToggler">
+                                <i class="far fa-bars"></i>
+                            </a>
+
+                            <nav class="main-menu col-2" style="float:left;">
+                                <ul>
+                                    <li id="wheelchair" class="menu-item-has-children font20">
+                                        <i class="fa fa-wheelchair" style="margin-left:-20px;"></i>
+                                        @*<ul class="submenu">
+                                        <li class="width30" id="btn-decrease"><a class="pointer"><span class="font20">A-</span></a></li>
+                                        <li class="width30" id="btn-orig"><a class="pointer"><span class="font20">A</span></a></li>
+                                        <li class="width30" id="btn-increase"><a class="pointer"><span class="font20">A+</span></a></li>
+                                        <li class="width30" id="btn-Black"><a class="pointer Black"><span class="font20" style="color:white;">A</span></a></li>
+                                        <li class="width30" id="btn-White"><a class="pointer Grey"><span class="font20 ">A</span></a></li>
+                                        </ul>*@
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="ml-4 col-3" style="float:left;">
+                                <select name="siteLanguage" id="siteLanguage" class="small-btn text-primary3 font-bold" style="display: none;">
+                                    <option value="en">English</option>
+                                    <option value="pa">ਪੰਜਾਬੀ</option>
+                                </select>
+                                <div class="nice-select small-btn text-primary3 font-bold" tabindex="0">
+                                    <span class="current">English</span>
+                                    <ul class="list langWrap">
+                                        <li class="option selected langWrap"><a href="#" lang="en" class="active">English</a></li>
+                                        <li class="option langWrap"><a href="#" lang="pa">ਪੰਜਾਬੀ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header4-contact d-none d-xl-flex align-items-center justify-content-start bg-primary h-100">
+                            <div class="media-icon mr-15"></div>
+                            <div class="media-body">
+                                <p class="mb-0 font-bold" style="color: white;">
+                                    &#128241;<a style="color: white;" href="tel:9814551313">
+                                        9814551313
+                                    </a><br />
+                                    &#128222;<a style="color: white;" href="tel:01722910679">
+                                        0172-2910679
+                                    </a>
+                                </p><span class="small text-white">
+                                    (Monday to
+                                    Friday)
+                                </span><br />
+                                <span class="small text-white">
+                                    09:00AM To 05:00PM
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+    <div style="margin-top:10px">
+    </div>
+    <div class="vs-subscribe-form-wrap subscribe-form-layout1 border-primary"></div>
+    <footer class="footer-area footer-layout1 background-image" data-overlay="primary3" data-opacity="9">
+        <div class="footer-widget-area pt-40 pt-md-50 pt-lg-80 pb-10 pb-lg-45">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="widget">
+                            <h3 class="widget_title">Our Services</h3>
+                            <ul>
+                                <li>
+                                    <a>
+                                        @Html.ActionLink("Building Plan Approval", "BuildingPlanApproval", "Service")
+                                    </a>
+                                </li>
+                                <li><a>@Html.ActionLink("Factories Act, 1948", "FactoryLicence", "Service")</a></li>
+                                <li>
+                                    <a>
+                                        @Html.ActionLink("Shops/Comm. Est.Act, 1958", "ShopsCommercial", "Service")
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>@Html.ActionLink("Contract Labour Act, 1970", "ContractLabour", "Service")</a>
+                                </li>
+                                <li>
+                                    <a>
+                                        @Html.ActionLink("Inter State Migrant Workmen", "InterStateMigrantWorkmen", "Service")
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        @Html.ActionLink("Building and Other Construction Work Act, 1996", "BOCW", "Service")
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        @Html.ActionLink("Motor Transport Workers Act, 1961", "MotorTransport", "Service")
+                                    </a>
+                                </li>
+                                <li><a>@Html.ActionLink("Trade Unions Act, 1926", "TradeUnion", "Service")</a></li>
+                                <li><a> @Html.ActionLink("Forms & Procedures", "FormsAndProcedures", "Service")</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="widget">
+                            <h3 class="widget_title">Important Links</h3>
+                            <ul>
+                                <li>
+                                    <a>
+                                        @Html.ActionLink("FAQ", "FAQ", "Home")
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        @Html.ActionLink("Private Policy", "PrivatePolicy", "Home")
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-5 offset-xl-1">
+                        <div class="widget">
+                            <h3 class="widget_title">Contact Info</h3>
+                            <div class="vs-contact-widget">
+                                <div class="row">
+                                    <div class="col-sm-6 border-right">
+                                        <div>
+                                            <p>
+                                                <i class="far fa-map-marker-alt"></i> <a href="https://goo.gl/maps/yaC188MEgVbBqmVX7">
+                                                    Labour Bhawan Model
+                                                    Welfare Centre Phase 10, Sector 64, Sahibzada Ajit Singh Nagar,
+                                                    Punjab, 160062.
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 pl-20 pb-1">
+                                        <h4 class="widget_title">DEPARTMENT OF LABOUR</h4>
+                                        <p class="text" style="margin-top:-20px">
+                                            <i class="fal fa-envelope"></i><a href="mailto:dylc.labour@punjab.gov.in" style="font-size: 14px;">dylc[dot]labour[at]punjab[dot]gov[dot]in</a>
+                                        </p>
+                                        <p class="text">
+                                            <i class="fal fa-phone-alt"></i><a href="tel:911722702486">+ 91-172-2702486</a>
+                                        </p>
+                                        <p class="text"><i class="fal fa-fax"></i><a href="tel:911722702486">+ 91-172-2702486</a></p>
+                                        <h4 class="widget_title" style="margin-top:50px;">FOR TECHNICAL ISSUES</h4>
+                                        <p class="text" style="margin-top:-20px">
+                                            <i class="fal fa-envelope"></i><a href="mailto:elabourhelpdesk@gmail.com" style="font-size: 16px;">elabourhelpdesk[at]gmail[dot]com</a>
+                                        </p>
+                                        <p class="text">
+                                            <i class="fal fa-phone-alt"></i><a href="tel:9814551313">+ 91-9814551313</a>
+                                        </p>
+                                        <p class="text">
+                                            <i class="fal fa-fax"></i><a href="tel:01722910679">0172-2910679</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="social-links border-top pt-20">
+                                            <p class="text d-inline-block pr-20">
+                                                <i class="far fa-link"></i>Social Media Links:
+                                            </p>
+                                            <ul class="d-inline-block">
+                                                <li>
+                                                    <a href="https://www.facebook.com/profile.php?id=100069124393394" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://instagram.com/pblabour?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.youtube.com/channel/UCyVaVpT6TyLQwUpQ0i3SN8g" target="_blank"><i class="fab fa-youtube"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-12" style="width:100%">
+            <div class="col-md-4" id="counter-area">
+                <p class="text-white mb-0 font-blod">
+                    Real time :
+                    <span id="counter" style=" color: white; padding: 4px 6px; border-radius: 5px;">
+                        <a href='http://www.freevisitorcounters.com'>here</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=8046346ab8e83580885c6cf5394d66fb22586e5a'></script>
+                        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1054847/t/5"></script>
+                    </span>
+                    visitors right now
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12" style="width:100%">
+            <div class="col-md-4"><p class="text-white mb-0 font-blod">Best Viewed : Google Chrome and Firefox</p></div>
+        </div>
+
+        <div class="footer-copyright text-center pt-25 pb-25">
+            <span class="line border-white"></span>
+            <div>
+                <ul>
+                    <li class="ulli"><a href="https://data.gov.in/" data-toggle="tooltip" title="Data Portal (External Site that opens in a new window)" target="_blank"><img src="~/assets/img/deptlogo/data-gov-logo.png" /></a></li>
+                    <li class="ulli"><a href="https://www.digitalindia.gov.in/" data-toggle="tooltip" title="Digital India( External Site that opens in a new window)" target="_blank"> <img src="~/assets/img/deptlogo/digital-india-logo.png" /></a></li>
+                    <li class="ulli"><a href="https://india.gov.in/" data-toggle="tooltip" title="NPI (External Site that opens in a new window)" target="_blank"><img src="~/assets/img/deptlogo/india-gov-logo.png" /></a></li>
+                    <li class="ulli"><a href="https://pbsc.nic.in/" data-toggle="tooltip" title="NIC (External Site that opens in a new window)" target="_blank"><img src="~/assets/img/deptlogo/nic.png" /></a></li>
+                    <li class="ulli"><a href="https://pmindia.gov.in/" data-toggle="tooltip" title="PM INDIA (External Site that opens in a new window)" target="_blank"><img src="~/assets/img/deptlogo/pm-india-logo.png" /></a></li>
+                    <li class="ulli"><a href="https://www.w3.org/WAI/policies/india/" data-toggle="tooltip" title="World Wide Web Consortium(Web Accessibility Initiative INDIA) (External Site that opens in a new window)" target="_blank"><img src="~/assets/img/deptlogo/w3c.png" /></a></li>
+                    <li class="ulli" style="border:none;"><a href="https://guidelines.india.gov.in/" data-toggle="tooltip" title="GUIDELINES FOR INDIAN GOVERNMENT WEBSITES (External Site that opens in a new window)" target="_blank"><img src="~/assets/img/deptlogo/gigw.png" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright text-center pt-25 pb-25">
+            <span class="line border-white"></span>
+            <p class="text-white mb-0 font-blod">Copyright &copy; 2023 All Rights Reserved by Department of Labour, Govt. of Punjab.</p>
+            <a href="https://pbsc.nic.in/" target="_blank"><p class="text-white mb-0 font-blod">Designed & Developed by NIC Punjab</p></a>
+        </div>
+    </footer>
+    <div class="sidemenu-wrapper d-none d-lg-block">
+        <div class="sidemenu-content">
+            <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+            <div class="widget widget_about">
+                <div class="vs-about">
+                    <a href="@Url.Action("Index", "Home")"><img src="~/assets/img/logo-41.png" class="zoom" alt="eLabourPunjab"></a>
+                    <p style="text-align: center; font-size: 22px;">eLabour Punjab</p>
+                </div>
+            </div>
+            <div class="widget widget_contact">
+                <div class="widget-contact">
+                    <div>
+                        <p><i class="fas fa-phone-alt"></i><a href="tel:9814551313">9814551313</a></p>
+                    </div><br>
+                    <div>
+                        <p><i class="fas fa-phone-alt"></i><a href="tel:+911722910679">0172-2910679</a></p>
+                    </div><br>
+                    <div>
+                        <p><i class="fal fa-envelope"></i><a href="mailto:elabourhelpdesk@gmail.com">elabourhelpdesk@gmail.com</a></p>
+                    </div><br>
+                    <div>
+                        <p>
+                            <i class="far fa-map-marker-alt"></i> <a href="https://goo.gl/maps/yaC188MEgVbBqmVX7">
+                                Labour
+                                Bhawan Model Welfare Centre
+                                Phase 10, Sector 64, Sahibzada Ajit Singh Nagar, Punjab, 160062.
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/BuildingPlanHUDManual.pdf" target="_blank"><img class="zoom rotateNoti" src="~/assets/img/icon/new.png" style="width:5%; position:fixed;bottom:130px;right:30px; z-index:9999;cursor:pointer;"></a>
+    <a href="#" class="scrollToTop bg-primary text-white border-primary">
+        <i class="far fa-long-arrow-alt-up"></i>
+    </a>
+    <script src="~/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/assets/js/app.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
+    <script src="~/assets/js/vscustom-carousel.min.js"></script>
+    <script src="~/assets/js/vsmenu.min.js"></script>
+    <script src="~/assets/js/ajaxmail.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    <script src="~/assets/js/vendor-all.min.js"></script>
+    <script src="~/assets/js/plugins/bootstrap.min.js"></script>
+    <script src="~/assets/js/pcoded.min.js"></script>
+
+    <script>
+
+        $('#wheelchair').click(function() {
+            $('#GIGWMenu').toggle();
+        });
+
+        $(document).ready(function() {
+            var $affectedElements = $("p"); // Can be extended, ex. $("div, p, span.someClass")
+
+            // Storing the original size in a data attribute so size can be reset
+            $affectedElements.each(function() {
+                var $this = $(this);
+                $this.data("orig-size", $this.css("font-size"));
+            });
+
+            $("#btn-increase").click(function() {
+                changeFontSize(1);
+            })
+
+            $("#btn-decrease").click(function() {
+                changeFontSize(-1);
+            })
+            $("#btn-Black").click(function() {
+                document.body.style.background = 'black';
+
+                $(".header-layout4.position-absolute").css("background-color", "black");
+                $(".menu-style1 ul li a").css("color", "white");
+                $(".title1").css("color", "white");
+                $(".section-title2 .title").css("color", "white");
+                $("p").css("color", "white");
+
+                $(".line").css("color", "white");
+                $(".line-2").css("color", "white");
+            })
+            $("#btn-White").click(function() {
+                document.body.style.background = 'white';
+
+                $(".header-layout4.position-absolute").css("background-color", "white");
+                $(".menu-style1 ul li a").css("color", "#08275a");
+                $(".title1").css("color", "#08275a");
+                $(".section-title2 .title").css("color", "#08275a");
+                $("p").css("color", "#08275a");
+                $(".line").css("color", "#08275a");
+                $(".line-2").css("color", "white");
+            })
+
+            $("#btn-orig").click(function() {
+                $affectedElements.each(function() {
+                    var $this = $(this);
+                    $this.css("font-size", $this.data("orig-size"));
+                });
+            })
+
+            function changeFontSize(direction) {
+                $affectedElements.each(function() {
+                    var $this = $(this);
+                    $this.css("font-size", parseInt($this.css("font-size")) + direction);
+                });
+            }
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            console.log(document.querySelector('.GalleryPhotographs'));
+            const langEl = document.querySelector('.langWrap');
+            const link = document.querySelectorAll('a');
+
+            //const header2 = document.querySelector('.header2');
+            //const header3 = document.querySelector('.header3');
+            //const header5 = document.querySelector('.header5');
+            //const header6 = document.querySelector('.header6');
+            //const header8 = document.querySelector('.header8');
+            //const header9 = document.querySelector('.header9');
+            //const WhtNew = document.querySelector('.WhtNew');
+            //const NewNoti = document.querySelector('.NewNoti');
+            //const More = document.querySelector('.More');
+            //const More1 = document.querySelector('.More1');
+            // const HowWeWorks = document.querySelector('.HowWeWorks');
+            const LatestNews = document.querySelector('.LatestNews');
+            const GalleryPhoto = document.querySelector('.GalleryPhoto');
+            const GalleryVideos = document.querySelector('.GalleryVideos');
+            const NewUser = document.querySelector('.NewUser');
+            const IndustryLogin = document.querySelector('.IndustryLogin');
+            const ApplyProcedure = document.querySelector('.ApplyProcedure');
+            const ThirdParty = document.querySelector('.ThirdParty');
+            const OurService = document.querySelector('.OurService');
+
+            const BuildingPlan = document.querySelector('.BuildingPlan');
+            const BuildingPlanTxt = document.querySelector('.BuildingPlanTxt');
+            const ReadMore = document.querySelector('.ReadMore');
+
+            const FactoriesAct = document.querySelector('.FactoriesAct');
+            const FactoriesActTxt = document.querySelector('.FactoriesActTxt');
+            const ReadMore1 = document.querySelector('.ReadMore1');
+
+            const Shops = document.querySelector('.Shops');
+            const ShopsTxt = document.querySelector('.ShopsTxt');
+            const ReadMore2 = document.querySelector('.ReadMore2');
+
+            const ContractLabour = document.querySelector('.ContractLabour');
+            const ContractLabourTxt = document.querySelector('.ContractLabourTxt');
+            const ReadMore3 = document.querySelector('.ReadMore3');
+
+            const InterState = document.querySelector('.InterState');
+            const InterStateTxt = document.querySelector('.InterStateTxt');
+            const ReadMore4 = document.querySelector('.ReadMore4');
+
+            const BOCW = document.querySelector('.BOCW');
+            const BOCWTxt = document.querySelector('.BOCWTxt');
+            const ReadMore5 = document.querySelector('.ReadMore5');
+
+            const Motor = document.querySelector('.Motor');
+            const MotorTxt = document.querySelector('.MotorTxt');
+            const ReadMore6 = document.querySelector('.ReadMore6');
+
+            const Trade = document.querySelector('.Trade');
+            const TradeTxt = document.querySelector('.TradeTxt');
+            const ReadMore7 = document.querySelector('.ReadMore7');
+
+            const Forms = document.querySelector('.Forms');
+            const FormsTxt = document.querySelector('.FormsTxt');
+            const ReadMore8 = document.querySelector('.ReadMore8');
+
+            const OurProfile = document.querySelector('.OurProfile');
+
+            const Organisation = document.querySelector('.Organisation');
+            const OrganisationTxt = document.querySelector('.OrganisationTxt');
+            const Learn = document.querySelector('.Learn');
+
+            const BOCW1 = document.querySelector('.BOCW1');
+            const BOCW1Txt = document.querySelector('.BOCW1Txt');
+            const Learn1 = document.querySelector('.Learn1');
+
+            const Punjab = document.querySelector('.Punjab');
+            const PunjabTxt = document.querySelector('.PunjabTxt');
+            const Learn2 = document.querySelector('.Learn2');
+
+            const Right = document.querySelector('.Right');
+            const RightTxt = document.querySelector('.RightTxt');
+            const Learn3 = document.querySelector('.Learn3');
+
+            const Right1 = document.querySelector('.Right1');
+            const Right1Txt = document.querySelector('.Right1Txt');
+            const Learn4 = document.querySelector('.Learn4');
+
+            const Tenders = document.querySelector('.Tenders');
+            const TendersTxt = document.querySelector('.TendersTxt');
+            const Learn5 = document.querySelector('.Learn5');
+
+            const sign = document.querySelector('.sign');
+
+            const intro = document.querySelector('.intro');
+
+
+
+
+
+            link.forEach(el => {
+
+                el.addEventListener('click', () => {
+
+                    langEl.querySelector('.active').classList.remove('active');
+                    el.classList.add('active');
+
+                    const attr = el.getAttribute('lang');
+                    console.log('>>>', data[attr].GalleryPhotographs);
+
+
+                    //header2.textContent = data[attr].header2;
+                    //header3.textContent = data[attr].header3;
+                    //header5.textContent = data[attr].header5;
+                    //header6.textContent = data[attr].header6;
+                    //header8.textContent = data[attr].header8;
+                    //header9.textContent = data[attr].header9;
+                    //WhtNew.textContent = data[attr].WhtNew;
+                    //NewNoti.textContent = data[attr].NewNoti;
+                    //More.textContent = data[attr].More;
+                    //More1.textContent = data[attr].More1;
+                    //HowWeWorks.textContent = data[attr].HowWeWorks;
+                    LatestNews.textContent = data[attr].LatestNews;
+                    GalleryPhoto.textContent = data[attr].GalleryPhoto;
+                    GalleryVideos.textContent = data[attr].GalleryVideos;
+                    NewUser.textContent = data[attr].NewUser;
+                    IndustryLogin.textContent = data[attr].IndustryLogin;
+                    ApplyProcedure.textContent = data[attr].ApplyProcedure;
+                    ThirdParty.textContent = data[attr].ThirdParty;
+                    OurService.textContent = data[attr].OurService;
+
+                    BuildingPlan.textContent = data[attr].BuildingPlan;
+                    BuildingPlanTxt.textContent = data[attr].BuildingPlanTxt;
+                    ReadMore.textContent = data[attr].ReadMore;
+
+                    FactoriesAct.textContent = data[attr].FactoriesAct;
+                    FactoriesActTxt.textContent = data[attr].FactoriesActTxt;
+                    ReadMore1.textContent = data[attr].ReadMore1;
+
+                    Shops.textContent = data[attr].Shops;
+                    ShopsTxt.textContent = data[attr].ShopsTxt;
+                    ReadMore2.textContent = data[attr].ReadMore2;
+
+                    ContractLabour.textContent = data[attr].ContractLabour;
+                    ContractLabourTxt.textContent = data[attr].ContractLabourTxt;
+                    ReadMore3.textContent = data[attr].ReadMore3;
+
+                    InterState.textContent = data[attr].InterState;
+                    InterStateTxt.textContent = data[attr].InterStateTxt;
+                    ReadMore4.textContent = data[attr].ReadMore4;
+
+                    BOCW.textContent = data[attr].BOCW;
+                    BOCWTxt.textContent = data[attr].BOCWTxt;
+                    ReadMore5.textContent = data[attr].ReadMore5;
+
+                    Motor.textContent = data[attr].Motor;
+                    MotorTxt.textContent = data[attr].MotorTxt;
+                    ReadMore6.textContent = data[attr].ReadMore6;
+
+                    Trade.textContent = data[attr].Trade;
+                    TradeTxt.textContent = data[attr].TradeTxt;
+                    ReadMore7.textContent = data[attr].ReadMore7;
+
+                    Forms.textContent = data[attr].Forms;
+                    FormsTxt.textContent = data[attr].FormsTxt;
+                    ReadMore8.textContent = data[attr].ReadMore8;
+
+                    OurProfile.textContent = data[attr].OurProfile;
+
+                    Organisation.textContent = data[attr].Organisation;
+                    OrganisationTxt.textContent = data[attr].OrganisationTxt;
+                    Learn.textContent = data[attr].Learn;
+
+                    BOCW1.textContent = data[attr].BOCW1;
+                    BOCW1Txt.textContent = data[attr].BOCW1Txt;
+                    Learn1.textContent = data[attr].Learn1;
+
+                    Punjab.textContent = data[attr].Punjab;
+                    PunjabTxt.textContent = data[attr].PunjabTxt;
+                    Learn2.textContent = data[attr].Learn2;
+
+                    Right.textContent = data[attr].Right;
+                    RightTxt.textContent = data[attr].RightTxt;
+                    Learn3.textContent = data[attr].Learn3;
+
+                    Right1.textContent = data[attr].Right1;
+                    Right1Txt.textContent = data[attr].Right1Txt;
+                    Learn4.textContent = data[attr].Learn4;
+
+
+                    Tenders.textContent = data[attr].Tenders;
+                    TendersTxt.textContent = data[attr].TendersTxt;
+                    Learn5.textContent = data[attr].Learn5;
+
+                    sign.textContent = data[attr].sign;
+
+
+                    intro.textContent = data[attr].intro;
+
+
+
+
+                });
+            });
+            var data = {
+                "en": {
+                    "header2": "Welcome to",
+                    "header3": "eLabour Punjab",
+                    "header5": "Welcome to",
+                    "header6": "eLabour Punjab",
+                    "header8": "Welcome to",
+                    "header9": "eLabour Punjab",
+                    "WhtNew": "What's New",
+                    "NewNoti": "New Notifications",
+                    "More": "For More",
+                    "More1": "For More",
+                    "HowWeWorks": "How We Works",
+                    "NewUser": "Create New User",
+                    "IndustryLogin": "Existing Industry Login",
+                    "ApplyProcedure": "How to Apply Procedure",
+                    "ThirdParty": "Third Party Verification",
+                    "OurService": "Our Service",
+
+                    "BuildingPlan": "Building Plan Approval",
+                    "BuildingPlanTxt": "Building Plans approval under Factories Act, 1948.",
+                    "ReadMore": "Read More",
+
+                    "FactoriesAct": "Factories Act, 1948",
+                    "FactoriesActTxt": "Registeration, Renewal and Amendments of Licence.",
+                    "ReadMore1": "Read More",
+
+                    "Shops": "Shops/Comm. Est. Act, 1958.",
+                    "ShopsTxt": "Registeration, Renewal and Amendments.",
+                    "ReadMore2": "Read More",
+
+                    "ContractLabour": "Contract Labour Act, 1970",
+                    "ContractLabourTxt": "Registration of Establishment employing contractors.",
+                    "ReadMore3": "Read More",
+
+                    "InterState": "Inter State Migrant Workmen",
+                    "InterStateTxt": "Licensing, Renewal and Amendments.",
+                    "ReadMore4": "Read More",
+
+                    "BOCW": "Building and Other Construction Work Act, 1996",
+                    "BOCWTxt": "Registration and Amendments.",
+                    "ReadMore5": "Read More",
+
+                    "Motor": " Motor Transport Workers Act, 1961",
+                    "MotorTxt": "Licensing, Renewal and Amendments.",
+                    "ReadMore6": "Read More",
+
+                    "Trade": "Trade Unions Act, 1926",
+                    "TradeTxt": "Registration and Inspection under various Labour Lows.",
+                    "ReadMore7": "Read More",
+
+                    "Forms": "Forms & Procedures",
+                    "FormsTxt": "Registration and Inspection under various Labour Lows.",
+                    "ReadMore8": "Read More",
+
+                    "OurProfile": "Our Profile",
+
+                    "Organisation": "Organisation Structure",
+                    "OrganisationTxt": "Organisation Structure of the Department...",
+                    "Learn": "Learn More",
+
+                    "BOCW1": "BOCW",
+                    "BOCW1Txt": "Registration of Construction Workers in the State of Punjab",
+                    "Learn1": "Learn More",
+
+                    "Punjab": "Punjab Welfare Board",
+                    "PunjabTxt": "Registration of Industrial workers in the State of Punjab",
+                    "Learn2": "Learn More",
+
+                    "Right": "Right to Information",
+                    "RightTxt": "An Act to provide information to the citizens under Right to Information Act.",
+                    "Learn3": "Learn More",
+
+                    "Right1": "Right to Service",
+                    "Right1Txt": "An Act to provide services to the people of the state within time limits...",
+                    "Learn4": "Learn More",
+
+
+                    "Tenders": "Forms & Procedures",
+                    "TendersTxt": "Registration and Inspection under various Labour Lows.",
+                    "Learn5": "Learn More",
+
+                    "sign": "How To Add Digital Signature",
+
+
+                    "intro": "Introduction",
+                    "GalleryPhoto": "Gallery Photographs",
+                    "GalleryVideos": "Gallery Videos",
+                    "LatestNews": "Latest News"
+
+
+                },
+                "pa": {
+                    "header2": "ਈ ਲੇਬਰ ਪੰਜਾਬ",
+                    "header3": "ਤੁਹਾਡਾ ਸਵਾਗਤ ਕਰਦਾ ਹੈ",
+                    "header5": "ਈ ਲੇਬਰ ਪੰਜਾਬ",
+                    "header6": "ਤੁਹਾਡਾ ਸਵਾਗਤ ਕਰਦਾ ਹੈ",
+                    "header8": "ਈ ਲੇਬਰ ਪੰਜਾਬ",
+                    "header9": "ਤੁਹਾਡਾ ਸਵਾਗਤ ਕਰਦਾ ਹੈ",
+                    "WhtNew": "ਨਵਾਂ ਕੀ ਹੈ",
+                    "NewNoti": "ਨਵੀਆਂ ਸੂਚਨਾਵਾਂ",
+                    "More": "ਅੱਗੇ ਪੜ੍ਹੋ",
+                    "More1": "ਅੱਗੇ ਪੜ੍ਹੋ",
+                    "HowWeWorks": "ਅਸੀਂ ਕਿਵੇਂ ਕੰਮ ਕਰਦੇ ਹਾਂ ?",
+                    "NewUser": "ਨਵਾਂ ਯੂਜ਼ਰ ਬਣਾਓ",
+                    "IndustryLogin": "ਮੌਜੂਦਾ ਉਦਯੋਗ ਲਾਗਇਨ",
+                    "ApplyProcedure": "ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਕਿਵੇਂ ਲਾਗੂ ਕਰਨਾ ਹੈ",
+                    "ThirdParty": "ਤੀਜੀ ਧਿਰ ਦੀ ਪੁਸ਼ਟੀ",
+
+                    "OurService": "ਸਾਡੀ ਸੇਵਾਵਾਂ",
+
+                    "BuildingPlan": "ਬਿਲਡਿੰਗ ਪਲਾਨ ਦੀ ਮਨਜ਼ੂਰੀ",
+                    "BuildingPlanTxt": "ਫੈਕਟਰੀ ਐਕਟ, 1948 ਅਧੀਨ ਬਿਲਡਿੰਗ ਪਲਾਨ ਦੀ ਮਨਜ਼ੂਰੀ।",
+                    "ReadMore": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "FactoriesAct": "ਫੈਕਟਰੀ ਐਕਟ, 1948",
+                    "FactoriesActTxt": "ਲਾਈਸੈਂਸ ਦੀ ਰਜਿਸਟ੍ਰੇਸ਼ਨ, ਨਵੀਨੀਕਰਨ ਅਤੇ ਸੋਧਾਂ।",
+                    "ReadMore1": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "Shops": "ਦੁਕਾਨਾਂ ਅਤੇ ਵਪਾਰਕ ਸਥਾਪਨਾ ਐਕਟ, 1958",
+                    "ShopsTxt": "ਰਜਿਸਟ੍ਰੇਸ਼ਨ, ਨਵੀਨੀਕਰਨ ਅਤੇ ਸੋਧਾਂ।",
+                    "ReadMore2": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "ContractLabour": "ਕੰਟਰੈਕਟ ਲੇਬਰ ਐਕਟ, 1970",
+                    "ContractLabourTxt": "ਠੇਕੇਦਾਰਾਂ ਨੂੰ ਰੁਜ਼ਗਾਰ ਦੇਣ ਵਾਲੀ ਸਥਾਪਨਾ ਦੀ ਰਜਿਸਟ੍ਰੇਸ਼ਨ।",
+                    "ReadMore3": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "InterState": "ਅੰਤਰਰਾਜੀ ਪ੍ਰਵਾਸੀ ਕਾਮੇ",
+                    "InterStateTxt": "ਲਾਇਸੰਸਿੰਗ, ਨਵੀਨੀਕਰਨ ਅਤੇ ਸੋਧ.",
+                    "ReadMore4": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "BOCW": "ਬਿਲਡਿੰਗ ਐਂਡ ਅਦਰ ਕੰਸਟਰਕਸ਼ਨ ਵਰਕ ਐਕਟ, 1996",
+                    "BOCWTxt": "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅਤੇ ਸੋਧਾਂ।",
+                    "ReadMore5": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "Motor": "ਮੋਟਰ ਟਰਾਂਸਪੋਰਟ ਵਰਕਰਜ਼ ਐਕਟ, 1961",
+                    "MotorTxt": "ਲਾਇਸੰਸਿੰਗ, ਨਵੀਨੀਕਰਨ ਅਤੇ ਸੋਧ.",
+                    "ReadMore6": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "Trade": "ਟਰੇਡ ਯੂਨੀਅਨ ਐਕਟ, 1926",
+                    "TradeTxt": "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅਤੇ ਸੋਧਾਂ।",
+                    "ReadMore7": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "Forms": "ਫਾਰਮ ਅਤੇ ਪ੍ਰਕਿਰਿਆਵਾਂ",
+                    "FormsTxt": "ਵੱਖ-ਵੱਖ ਲੇਬਰ ਨੀਵਾਂ ਅਧੀਨ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅਤੇ ਨਿਰੀਖਣ।",
+                    "ReadMore8": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "OurProfile": "ਸਾਡੇ ਬਾਰੇ",
+
+                    "Organisation": "ਸੰਗਠਨ ਬਣਤਰ",
+                    "OrganisationTxt": "ਵਿਭਾਗ ਦਾ ਸੰਗਠਨ ਢਾਂਚਾ...",
+                    "Learn": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "BOCW1": "ਬੀ.ਓ.ਸੀ.ਡਬਲਿਊ",
+                    "BOCW1Txt": "ਪੰਜਾਬ ਰਾਜ ਵਿੱਚ ਉਸਾਰੀ ਕਿਰਤੀਆਂ ਦੀ ਰਜਿਸਟ੍ਰੇਸ਼ਨ",
+                    "Learn1": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "Punjab": "ਪੰਜਾਬ ਭਲਾਈ ਬੋਰਡ",
+                    "PunjabTxt": "ਪੰਜਾਬ ਰਾਜ ਵਿੱਚ ਉਦਯੋਗਿਕ ਕਾਮਿਆਂ ਦੀ ਰਜਿਸਟ੍ਰੇਸ਼ਨ",
+                    "Learn2": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "Right": "ਸੂਚਨਾ ਦਾ ਅਧਿਕਾਰ",
+                    "RightTxt": "ਸੂਚਨਾ ਅਧਿਕਾਰ ਕਾਨੂੰਨ ਤਹਿਤ ਨਾਗਰਿਕਾਂ ਨੂੰ ਸੂਚਨਾ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਇੱਕ ਐਕਟ।",
+                    "Learn3": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "Right1": "ਸੇਵਾ ਦਾ ਅਧਿਕਾਰ",
+                    "Right1Txt": "ਰਾਜ ਦੇ ਲੋਕਾਂ ਨੂੰ ਸਮਾਂ ਸੀਮਾ ਦੇ ਅੰਦਰ ਸੇਵਾਵਾਂ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਇੱਕ ਐਕਟ...",
+                    "Learn4": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "Tenders": "ਟੈਂਡਰ ਅਤੇ ਜਨਤਕ ਨੋਟਿਸ",
+                    "TendersTxt": "ਟੈਂਡਰ ਦਸਤਾਵੇਜ਼ ਅਤੇ ਜਨਤਕ ਨੋਟਿਸ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਟੈਂਡਰ ਜਾਣਕਾਰੀ...",
+                    "Learn5": "ਅੱਗੇ ਪੜ੍ਹੋ",
+
+                    "sign": "ਡਿਜੀਟਲ ਦਸਤਖਤ ਕਿਵੇਂ ਕਰੀਏ ?",
+
+                    "intro": "ਜਾਣ-ਪਛਾਣ",
+                    "GalleryPhoto": "ਗੈਲਰੀ ਫੋਟੋ",
+                    "GalleryVideos": "ਗੈਲਰੀ ਵੀਡੀਓਜ਼",
+                    "LatestNews": "ਤਾਜ਼ਾ ਖ਼ਬਰਾਂ",
+
+
+                }
+            }
+        });
+    </script>
+</body>
+</html>

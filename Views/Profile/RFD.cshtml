@@ -1,0 +1,102 @@
+﻿<style>      .GIGWMenu {
+    width: 100%;
+    display: none;
+    height: 150px;
+    margin-top: 115px;
+    position: fixed;
+    z-index: 9999999;
+}</style><section class="vs-values-wrapper vs-values-layout1 py-60">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+        </div>
+    </div>
+</section>
+<section class="vs-values-wrapper vs-values-layout1">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-7">
+                <div class="section-title">
+                    <h2 class="title1">RFD</h2>
+                    <span class="icon">
+                        <img src="../assets/img/icon/announcement.png" style="width: 20%;"
+                             alt="Section Title Icons">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vs-values-wrapper vs-values-layout1">
+    <div class="container " style="clear: both; ">
+        <div class="row justify-content-center text-center ">
+        </div>
+    </div>
+</section>
+
+<section class="vs-product-wrapper product-details-layout1">
+    <div style="width: 90%; margin-left: 50px;">
+        <ul class="nav product-tab-style1 mb-3 pt-lg-5 pt-4" id="productTab" role="tablist">
+            <li><a id="button" at="12" data-toggle="tab" href="#newNoti" role="tab" aria-controls="newNoti" aria-selected="false" class="active">Statistical Information</a></li>
+        </ul>
+        <div class="tab-content" id="productDetailsTab">
+            <div class="tab-pane show active" id="newNoti" aria-labelledby="newNoti-tab">
+                <div class="product-description">
+                    <div class="inner-list" id="dataDisplay">
+                        <ul class="row">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="vs-values-wrapper vs-values-layout1 py-60 " style="margin-top: -50px; ">
+    <div class="container " style="clear: both; ">
+        <div class="row justify-content-center text-center ">
+        </div>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+         var rootPath = window.location.origin + '@ViewBag.rootPath' + '@Url.Action("GetNotificationById")';
+        var pbLabourAdminStaticBaseUrl = '@ViewBag.pbLabourAdminStaticBaseUrl';
+        console.log(rootPath)
+
+        var renderData = (id, data) => {
+            $('#dataDisplay').show();
+            $('#' + id).find($('ul')).html('');
+            $('#' + id).find($('ul'))
+            data.forEach(i => {
+                $('#' + id).find($('ul'))
+                    .append(
+                        $('<li class="col-sm-12 col-md-6"></li>')
+                            .append($('<a target="_blank">')
+                                .addClass('heading6')
+                                .toggleClass('tooltip')
+                                .attr('title', i.DocumentName)
+                                .attr("href", pbLabourAdminStaticBaseUrl+ "/uploads/"+ i.UploadedFileName).text(i.UploadedFileName))
+                            .append($('<h6 data-toggle="tooltip"></h6>').text(i.DocumentName))
+                            .append($('</a>'))
+                    )
+            })
+        }
+        $("[id*=button]").click(function() {
+            var RoleId = $(this).attr('at')
+            $.ajax({
+                url: rootPath,
+                method: 'POST',
+                data: { id: RoleId },
+                success: function(data) {
+                    console.log(data);
+                    renderData('dataDisplay', JSON.parse(data));
+                },
+                error: function(err) {
+                    console.error(err);
+                }
+            });
+        });
+        $('#button').click();
+    });
+</script>

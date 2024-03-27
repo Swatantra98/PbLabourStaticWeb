@@ -1,0 +1,199 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PbLabourStatic
+build_property.RootNamespace = PbLabourStatic
+build_property.ProjectDir = E:\Repos\PBLabour Site\PbLabourStaticSourcetree\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = E:\Repos\PBLabour Site\PbLabourStaticSourcetree
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Branches/AccountsAndFinance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcQWNjb3VudHNBbmRGaW5hbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Branches/FactoryWing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcRmFjdG9yeVdpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Home/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Home/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Home/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Home/Index - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleCAtIENvcHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Home/PrivatePolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YXRlUG9saWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Home/SampleAppFillProcess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYW1wbGVBcHBGaWxsUHJvY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Home/ScreenReader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTY3JlZW5SZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/ActAndRules.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxBY3RBbmRSdWxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/ChildLabour.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDaGlsZExhYm91ci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/CWP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDV1AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/FactoryWing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxGYWN0b3J5V2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/FactoryWingReportsandNotifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxGYWN0b3J5V2luZ1JlcG9ydHNhbmROb3RpZmljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/LabourWing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxMYWJvdXJXaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxOb3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/OrgStructure.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxPcmdTdHJ1Y3R1cmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/PunjabWelfareBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQdW5qYWJXZWxmYXJlQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/RFD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxSRkQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/RightToInformation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxSaWdodFRvSW5mb3JtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/RightToInformationService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxSaWdodFRvSW5mb3JtYXRpb25TZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/StatisticalInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxTdGF0aXN0aWNhbEluZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Profile/TendersAndPublicNotices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxUZW5kZXJzQW5kUHVibGljTm90aWNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/PublicInterface/FormsAndProcedures.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljSW50ZXJmYWNlXEZvcm1zQW5kUHJvY2VkdXJlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/PublicInterface/FunctionsAndActivities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljSW50ZXJmYWNlXEZ1bmN0aW9uc0FuZEFjdGl2aXRpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/PublicInterface/ServicesProvided.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljSW50ZXJmYWNlXFNlcnZpY2VzUHJvdmlkZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/PublicInterface/ThirdPartyVerification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljSW50ZXJmYWNlXFRoaXJkUGFydHlWZXJpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Service/BOCW.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxCT0NXLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Service/BuildingPlanApproval.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxCdWlsZGluZ1BsYW5BcHByb3ZhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Service/ContractLabour.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxDb250cmFjdExhYm91ci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Service/FactoryLicence.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxGYWN0b3J5TGljZW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Service/FormsAndProcedures.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxGb3Jtc0FuZFByb2NlZHVyZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Service/InterStateMigrantWorkmen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbnRlclN0YXRlTWlncmFudFdvcmttZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Service/MotorTransport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxNb3RvclRyYW5zcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Service/NightShift.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxOaWdodFNoaWZ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Service/ShopsCommercial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxTaG9wc0NvbW1lcmNpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Service/TradeUnion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxUcmFkZVVuaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repos/PBLabour Site/PbLabourStaticSourcetree/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yqyd4q21ta

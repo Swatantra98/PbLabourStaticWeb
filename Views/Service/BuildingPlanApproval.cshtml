@@ -1,0 +1,404 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+<style>      .GIGWMenu {
+    width: 100%;
+    display: none;
+    height: 150px;
+    margin-top: 115px;
+    position: fixed;
+    z-index: 9999999;
+}
+    .inner-list ul li:before {
+        content: none;
+        font-family: "Font Awesome 5 Pro";
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        box-shadow: 0px 5px 20px 0px rgb(17 180 245 / 15%);
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px;
+        color: rgb(68, 192, 196);
+        font-weight: 400;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .marginClass {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .requireCon {
+        margin-top: -50px;
+    }
+
+    .imgCon {
+        width: 5%;
+        float: left;
+    }
+
+    .imgCon1 {
+        width: 7%;
+        float: left;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    .textCon {
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+
+    .flowChartCon {
+        margin-top: -50px;
+        margin-bottom: -130px;
+    }
+
+    .process-layout4 .vs-process {
+        position: relative;
+        padding: 15px 40px 28px 15px;
+        margin-bottom: 15px;
+        height: 300px;
+        border: 1px solid rgb(68, 192, 196);
+    }
+
+    .bg-light {
+        background-color: rgb(165 229 255 / 7%) !important;
+    }
+
+    .mainCon {
+        border: 1px solid rgba(17, 180, 245, 0.3);
+        background-color: rgba(17, 180, 245, 0.07);
+        width: 63%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding: 20px
+    }
+
+    @@media only screen and (max-width: 600px) {
+        .title1 {
+            font-size: 32px;
+        }
+
+        .requireCon {
+            margin-top: 0px;
+        }
+
+        .imgCon {
+            width: 20%;
+        }
+           .imgCon1 {
+        width: 20%;
+    }
+        .textCon {
+            text-align: left;
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+
+        .flowChartCon {
+            margin-top: 0px;
+            margin-bottom: -130px;
+        }
+
+        .process-layout4 .vs-process {
+            position: relative;
+            padding: 15px 40px 28px 15px;
+            margin-bottom: 15px;
+            height: 300px;
+            border: 1px solid rgb(68, 192, 196);
+        }
+
+        .mainCon {
+            width: 90%
+        }
+    }
+
+</style>
+<section class="vs-values-wrapper vs-values-layout1 py-60">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+        </div>
+    </div>
+</section>
+<section class="vs-values-wrapper vs-values-layout1">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-7">
+                <div class="section-title">
+                    <h2 class="title1">Building Plan</h2>
+                    <span class="icon">
+                        <img src="../assets/img/icon/building.png" style="width: 20%;"
+                             alt="Section Title Icons">
+                    </span>
+                    <p class="text">Building Plan Approval under The Punjab Factory Rules, 1952</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="vs-values-wrapper vs-values-layout1">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+        </div>
+    </div>
+</section>
+<div class="mainCon">
+    <section class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area blog-comments-layout1">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/file.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name"><strong>Overview</strong></h4>
+                                    </div>
+                                    <p class="text" style="margin-left: 80px;">
+                                        The employer has to get approved the proposed building plans prior to construction of the factory from the Directorate of Factories in accordance with the provisions of Section 6 of the Act and rule 3 - A,4, 5 and
+                                        6. If the premises is extended including plant and machinery, the proposed building plans of the extension will be got approved prior to construction. Acceptance of plans of new factory building is done within
+                                        30 days of time after receipt of complete Application / documents.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon1"><img src="../assets/img/icon/timeline.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name"><strong>Time Line</strong>(RTS TimeLine)</h4>
+                                    </div>
+                                    <p class="text" style="margin-left: 80px;">
+                                        Acceptance of plans of new factory extension in building/ amendment in building is done<br> within 30 days of time as per RTS notification no. 5/27/2014 - 2GR - 2(PF)/668042/1 dated 15 - 01 - 2016<br> ( Service No. 227 - 235) after
+                                        receipt of complete Application / documents.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+     <section class="vs-testimonial-wrapper vs-testimonial-layout1 product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/folder.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name" style="margin-left: 100px;"><strong>Required documents</strong></h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <div class="row flex-row-reverse align-items-center">
+            <div class="col-lg-5 col-xl-6">
+                <div class="position-relative d-inline-block"><img class="zoom" src="../assets/img/logo-41.png"> </div>
+            </div>
+            <div class="col-lg-7 col-xl-6">
+                <div class="-about pt-4">
+                    <div class="inner-list">
+                        <ul style="margin:0px">
+                            <li style="margin:0px">
+                                <p style="margin-top:0px; margin-left:30px;line-height: 1.5;">&#8801; Undertaking.</p><br>
+                                <p style="margin-top:-20px; margin-left:30px;line-height: 1.5;">&#8801; Form No. 1-C.</p><br>
+                                <p style="margin-top:-20px; margin-left:30px;line-height: 1.5;">&#8801; Process Flow Chart.</p><br>
+                                <p style="margin-top:-20px; margin-left:30px;line-height: 1.5;">&#8801; Form No.1-D.</p><br>
+                                <p style="margin-top:-20px; margin-left:30px;line-height: 1.5;">&#8801; Form No.1-E.</p><br>
+                                <p style="margin-top:-20px; margin-left:30px;line-height: 1.5;">&#8801; Form No.1-F(if required).</p><br>
+                                <p style="margin-top:-20px; margin-left:30px;line-height: 1.5;">&#8801; C.A. Certificate(if required).</p><br>
+                                <p style="margin-top:-20px; margin-left:30px;line-height: 1.5;">&#8801; Appointment letter of competent person.</p><br>
+                                <p style="margin-top:-20px; margin-left:30px;line-height: 1.5;">&#8801; List of Machineries.</p><br>
+                                <p style="margin-top:-20px; margin-left:30px;line-height: 1.5;">&#8801; Other Documents.</p><br>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    <hr />
+    <section class="product-details-layout1 marginClass">
+        <div class="col-12" style="margin-left:auto;margin-right:auto;">
+            <div class="tab-content">
+                <div class="tab-pane show active" id="review" aria-labelledby="review-tab">
+                    <div class="blog-comment-area blog-comments-layout1">
+                        <ul class="comment-list">
+                            <li class="vs-comment">
+                                <div class="imgCon"><img src="../assets/img/icon/rupee.png" alt="Comment Author"></div>
+                                <div class="comment-content">
+                                    <div class="comment-author">
+                                        <h4 class="name"><strong>Fees for the Approval of Building Plan</strong></h4>
+                                    </div>
+                                    <p class="text" style="margin-left: 80px;">
+                                        “1% cess of deposite fee.”
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<section class="vs-blog-wrapper blog-single-layout1">
+    <div class="container">
+        <div class="row gutters-40 justify-content-center">
+            <div class="col-lg-12">
+                <div class="vs-blog format-standard has-post-thumbnail">
+                    <div class="blog-content">
+                        <blockquote class="blockquote mb-30">
+                            <p class="mb-0"><b>After getting Building Plan Approval, an applicant can apply for following services:</b></p>
+                        </blockquote>
+                        <div class="blog-comment-area blog-comments-layout1 pt-lg-40 ">
+                            <h3 class="inner-title">Building Plan Services :</h3>
+                            <ul class="comment-list">
+                                <li class="vs-comment">
+                                    <div class="vs-post-comment">
+                                        <div class="comment-content col-lg-12">
+                                            <div class="comment-top">
+                                                <div class="comment-author">
+                                                    <span class="commented-on">Service - I</span>
+                                                    <h5 class="name">Proposed Building Plan.</h5>
+                                                </div>
+                                                <div class="reply_and_edit"><a href="@ViewBag.pbLabourAdminStaticBaseUrl/BuildingPlanPDFs/ProposedBuilding.pdf" class="vs-btn icon-none style5" target="_blank"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="vs-comment">
+                                    <div class="vs-post-comment">
+                                        <div class="comment-content col-lg-12">
+                                            <div class="comment-top">
+                                                <div class="comment-author">
+                                                    <span class="commented-on">Service - II</span>
+                                                    <h5 class="name"> Constructed Building Plan with Stability.</h5>
+                                                </div>
+                                                <div class="reply_and_edit"><a href="@ViewBag.pbLabourAdminStaticBaseUrl/BuildingPlanPDFs/BuildingwithStability.pdf" class="vs-btn icon-none style5" target="_blank"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="vs-comment">
+                                    <div class="vs-post-comment">
+                                        <div class="comment-content col-lg-12">
+                                            <div class="comment-top">
+                                                <div class="comment-author">
+                                                    <span class="commented-on">Service - III</span>
+                                                    <h5 class="name">Existing Building Plan With Stability Certificate (Additions Building Plan).</h5>
+                                                </div>
+                                                <div class="reply_and_edit"><a href="@ViewBag.pbLabourAdminStaticBaseUrl/BuildingPlanPDFs/AdditionsBuildingPlan.pdf" class="vs-btn icon-none style5" target="_blank"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="vs-comment">
+                                    <div class="vs-post-comment">
+                                        <div class="comment-content col-lg-12">
+                                            <div class="comment-top">
+                                                <div class="comment-author">
+                                                    <span class="commented-on">Service - IV</span>
+                                                    <h5 class="name">Existing Building Plan With Stability Certificate (Amendments Building Plan).</h5>
+                                                </div>
+                                                <div class="reply_and_edit"><a href="@ViewBag.pbLabourAdminStaticBaseUrl/BuildingPlanPDFs/AmendmentsBuildingPlan.pdf" class="vs-btn icon-none style5" target="_blank"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="vs-comment">
+                                    <div class="vs-post-comment">
+                                        <div class="comment-content col-lg-12">
+                                            <div class="comment-top">
+                                                <div class="comment-author">
+                                                    <span class="commented-on">Service - V</span>
+                                                    <h5 class="name"> Only Stability Certificate.</h5>
+                                                </div>
+                                                <div class="reply_and_edit"><a href="@ViewBag.pbLabourAdminStaticBaseUrl/BuildingPlanPDFs/OnlyStabilityCertificate.pdf" class="vs-btn icon-none style5" target="_blank"><span class="btn-text"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</span><span class="btn-bg"></span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container" style="margin-bottom: 10px;">
+    <div class="divider-layout1">
+        <span class="icon">
+            <img src="../assets/img/icon/planning.png" style="width: 50%;"
+                 alt="Section Title Icons">
+        </span>
+    </div>
+</div>
+<section class="vs-values-wrapper vs-values-layout1 flowChartCon">
+    <div class="container">
+        <img src="../assets/img/Official/FlowChartBP.png" alt="Section Title Icons">
+    </div>
+</section>
+<section class="vs-values-wrapper vs-values-layout1 py-60 " style="margin-top: -50px;">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+        </div>
+    </div>
+</section>
+<section class="vs-values-wrapper vs-values-layout1 py-60 " style="margin-top: -50px;">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+        </div>
+    </div>
+</section>
+<div class="vs-subscribe-form-wrap subscribe-form-layout1 bg-secondary border-primary py-40 py-lg-80" style="border-bottom: none; margin: -10px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-xl-6">
+                <div class="cta-content text-center text-lg-left">
+                    <h2 class="cta-title" style="color:#08275a;">
+                        To <strong>Apply</strong>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-6">
+                <div class="cta-button text-center text-lg-right pt-4 pt-lg-0">
+                    <a href="@Configuration.GetSection("AppPath")["pbLabourAdminStaticBaseUrl"]/SampleFormPdf/BuildingPlan.pdf" target="_blank" class="vs-btn style1 mb-3 mb-sm-0"><span class="btn-text">How To Apply<i class="far fa-reply"></i></span><span class="btn-bg" style="top: 222px; left: 175.469px;"></span></a>
+                    <a href="https://pbindustries.gov.in/webportal/" class="form-group col-md-4 text-center text-md-left mb-0" target="_blank"><span class="vs-btn style2">Click Here <i class="far fa-long-arrow-alt-right"></i></span><span class="btn-bg"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

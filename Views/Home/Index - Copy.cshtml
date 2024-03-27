@@ -1,0 +1,574 @@
+﻿@model DocumentIndex
+@{
+    ViewData["Title"] = "Home Page";
+    int countWhatsNew = 1;
+    int countNewNoti = 1;
+}
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .width50{
+        width:50%;
+    }
+</style>
+<section class="vs-hero-wrapper vs-hero-layout4">
+    <div class="vs-hero-carousel" data-height="1000" data-responsiveunder="1920" data-container="1920" data-bigwidth="100%" data-slidertype="responsive">
+        <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1.4;">
+            <img src="~/assets/img/hero/slide-img-4-1.jpg" alt="Slide Background" class="ls-bg">
+            <img src="~/assets/img/hero/shape-4-4.png" alt="Slide Shape" class="ls-l" style="left: 50%; top: 50%;" data-ls="scalexin: 0; scaleyin: 0; fadein: true; durationin: 2000; delayin: 1500; scalexout: 0; scaleyout: 0; durationout: 2000;">
+
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 6000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 6700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 6000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+           
+            <h1 class="ls-l header2" style="left: 50%; top: 365px; text-align: center; font-size: 77.72px; text-transform: none; color: #ffffff;" data-ls="offsetyin: 100; fadein: true; durationin: 1000; delayin: 300; easingin: easeInOutSine; ">
+               <p class="header2">Welcome to</p>
+            </h1>
+            <h1 class="ls-l" style="left: 50%; top: 455px; text-align: center; font-size: 77.72px; text-transform: none; color: #ffffff;" data-ls="offsetyin: 100; fadein: true; durationin: 1000;  delayin: 700; easingin: easeInOutSine; ">
+                <p class="header3">eLabour Punjab</p>
+            </h1>
+        </div>
+        <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1.4;">
+            <img src="~/assets/img/hero/slide-img-4-2.jpg" alt="Slide Background" class="ls-bg">
+            <img src="~/assets/img/hero/shape-4-4.png" alt="Slide Shape" class="ls-l" style="left: 50%; top: 50%;" data-ls="scalexin: 0; scaleyin: 0; fadein: true; durationin: 2000; delayin: 1500; scalexout: 0; scaleyout: 0; durationout: 2000;">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 6000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 6700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 6000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            
+            <h1 class="ls-l" style="left: 50%; top: 365px; text-align: center; font-size: 77.72px; text-transform: none; color: #ffffff;" data-ls="offsetyin: 100; fadein: true; durationin: 1000; delayin: 300; easingin: easeInOutSine; ">
+              <p class="header5">Welcome to</p>
+            </h1>
+            <h1 class="ls-l" style="left: 50%; top: 455px; text-align: center; font-size: 77.72px; text-transform: none; color: #ffffff;" data-ls="offsetyin: 100; fadein: true; durationin: 1000;  delayin: 700; easingin: easeInOutSine; ">
+              <p class="header6">eLabour Punjab</p>
+            </h1>
+        </div>
+        <div class="hero-slide ls-slide" data-ls="duration: 14000; transition2d: 5; kenburnszoom:out; kenburnsscale:1.4;">
+            <img src="~/assets/img/hero/slide-img-4-3.jpg" alt="Slide Background" class="ls-bg">
+            <img src="~/assets/img/hero/shape-4-4.png" alt="Slide Shape" class="ls-l" style="left: 50%; top: 50%;" data-ls="scalexin: 0; scaleyin: 0; fadein: true; durationin: 2000; delayin: 1500; scalexout: 0; scaleyout: 0; durationout: 2000;">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 23%; top: 46%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 6000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 48%; top: 55%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 6700; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+            <img src="~/assets/img/hero/shine-1.png" alt="Slide Shine" class="ls-l" style="left: 81%; top: 33%;" data-ls="scalexin: 0.8; scaleyin: 0.8; durationin: 1000; delayin: 6000; loop: true; loopduration: 1000; loopopacity: 0; loopyoyo: true; loopcount: -1; ">
+           
+            <h1 class="ls-l" style="left: 50%; top: 365px; text-align: center; font-size: 77.72px; text-transform: none; color: #ffffff;" data-ls="offsetyin: 100; fadein: true; durationin: 1000; delayin: 300; easingin: easeInOutSine; ">
+              <p class="header8">Welcome to</p>
+            </h1>
+            <h1 class="ls-l" style="left: 50%; top: 455px; text-align: center; font-size: 77.72px; text-transform: none; color: #ffffff;" data-ls="offsetyin: 100; fadein: true; durationin: 1000;  delayin: 700; easingin: easeInOutSine; ">
+               <p class="header9">eLabour Punjab</p>
+            </h1>
+        </div>
+    </div>
+</section>
+@if (Model.Documents.Any())
+{
+    <section class="vs-about-us-wrap vs-about-us-layout3 pt-60 pt-lg-130 pb-30 pb-lg-100" id="about">
+        <div class="container">
+            <div class="row gutters-50">
+                <div class="col-lg-6">
+                    <div class="widget widget_categories">
+                        <h3 class="widget_title WhtNew">What's New</h3>
+                        <ul>
+                            @foreach (var item in Model.Documents)
+                            {
+                                <li data-toggle="tooltip" title="@item.DocumentName">
+                                    <p><a href="@ViewBag.pbLabourAdminStaticBaseUrl/uploads/@item.UploadedFileName" target="_blank">
+                                        @item.DocumentName
+                                    </a></p> <span> @(countWhatsNew++)</span>
+                                </li>
+                            }
+                            <a href="@ViewBag.StaticSitePath/Profile/Notification" class="link-btn More" tabindex="0">
+                                For More<i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 align-self-center mb-30">
+                    <div class="widget widget_categories">
+                        <h3 class="widget_title NewNoti">New Notifications</h3>
+                        <ul>
+                            @foreach (var item in Model.Documents)
+                            {
+                                <li data-toggle="tooltip" title="@item.DocumentName">
+                                    <p><a href="@ViewBag.pbLabourAdminStaticBaseUrl/uploads/@item.UploadedFileName" target="_blank">
+                                        @item.DocumentName
+                                    </a></p> <span> @(countNewNoti++)</span>
+                                </li>
+                            }
+                            <a href="@ViewBag.StaticSitePath/Profile/Notification" class="link-btn More1" tabindex="0">
+                                For More<i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+<section class="vs-work-process gradient-overlay work-process-layout3 background-image pt-60 pt-lg-130 border-primary" data-overlay="primary" id="process">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title3 pb-0">
+                    <h2 class="heading1 text-white HowWeWorks">How We Works</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inner-wrapper pr-xl-140 pt-30 pt-lg-100">
+        <div class="counter-box-layout3 bg-white mr-xl-200 pb-xl-50 pt-30 pt-xl-80">
+            <div class="row no-gutters">
+                <div class="col-sm-6 col-lg-3 border-primary">
+                    <div class="counter-box d-flex align-items-center">
+                        <div class="counter-icon mr-20" data-overlay="primary">
+                            <span class="text-primary">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <a href="https://pblabour.gov.in/eLabour/Account/RegisterInvestor" style="z-index:9999;">
+                            <div class="counter-content"><span class="text mb-0 NewUser">Create New User</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 border-primary">
+                    <div class="counter-box d-flex align-items-center">
+                        <div class="counter-icon mr-20" data-overlay="primary">
+                            <span class="text-primary">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <a href="https://pblabour.gov.in/eLabour/Account/Login" style="z-index:9999;">
+                            <div class="counter-content">
+                                <span class="text mb-0 IndustryLogin">Existing Industry Login</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 border-primary">
+                    <div class="counter-box d-flex align-items-center">
+                        <div class="counter-icon mr-20" data-overlay="primary">
+                            <span class="text-primary">
+                                <i class="fa fa-tasks" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <a href="@ViewBag.StaticSitePath/Home/SampleAppFillProcess" style="z-index:9999;">
+                            <div class="counter-content"><span class="text mb-0 ApplyProcedure">How to Apply Procedure</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 border-primary">
+                    <div class="counter-box d-flex align-items-center">
+                        <div class="counter-icon mr-20" data-overlay="primary">
+                            <span class="text-primary">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <a href="https://pblabour.gov.in/eLabour/Account/ApplicationStatus" style="z-index:9999;">
+                            <div class="counter-content">
+                                <span class="text mb-0 ThirdParty">Third Party Verification</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vs-service-wrappper service-layout4 pb-30 pb-lg-100 pt-60 pt-lg-130" id="service">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-7">
+                <div class="section-title2">
+                    <h2 class="title1 OurService">Our Service</h2>
+                    <span class="icon">
+                        <img src="~/assets/img/icon/section-title-icon-1.png" style="width: 20%;"
+                             alt="Section Title Icons">
+                        <i class="line"></i> <i class="line-2"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row vs-carousel" data-centermode="true" data-slidetoshow="3" data-lgslidetoshow="2" data-mdslidetoshow="2" data-smslidetoshow="2" data-xsslidetoshow="1">
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@ViewBag.StaticSitePath/Service/BuildingPlanApproval"><img src="~/assets/img/icon/building1.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/building.png"
+                                 style="width: 50%;">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@ViewBag.StaticSitePath/Service/BuildingPlanApproval" class="BuildingPlan">Building Plan Approval</a>
+                        </h3>
+                        <p class="text BuildingPlanTxt" >Building Plans approval under Factories Act, 1948.</p>
+                        <a href="@ViewBag.StaticSitePath/Service/BuildingPlanApproval" class="link-btn ReadMore">Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@ViewBag.StaticSitePath/Service/FactoryLicence"><img src="~/assets/img/icon/factory1.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/factory.png"
+                                 style="width: 50%;">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@ViewBag.StaticSitePath/Service/FactoryLicence" class="FactoriesAct">Factories Act, 1948
+                            </a>
+                        </h3>
+                        <p class="text FactoriesActTxt">Registeration, Renewal and Amendments of Licence.</p><a href="@ViewBag.StaticSitePath/Service/FactoryLicence" class="link-btn ReadMore1">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@ViewBag.StaticSitePath/Service/ShopsCommercial"><img src="~/assets/img/icon/shop1.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/shop.png"
+                                 style="width: 50%;">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@ViewBag.StaticSitePath/Service/ShopsCommercial" class="Shops">Shops/Comm. Est. Act, 1958.</a>
+                        </h3>
+                        <p class="text ShopsTxt">Registeration, Renewal and Amendments.</p><a href="@ViewBag.StaticSitePath/Service/ShopsCommercial" class="link-btn ReadMore2">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@ViewBag.StaticSitePath/Service/ContractLabour"><img src="~/assets/img/icon/labour1.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/laborers.png"
+                                 style="width: 50%;">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@ViewBag.StaticSitePath/Service/ContractLabour" class="ContractLabour">Contract Labour Act, 1970</a>
+                        </h3>
+                        <p class="text ContractLabourTxt">Registration of Establishment employing contractors.</p><a href="@ViewBag.StaticSitePath/Service/ContractLabour" class="link-btn ReadMore3">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@ViewBag.StaticSitePath/Service/InterStateMigrantWorkmen"><img src="~/assets/img/icon/interstate.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/refugee.png"
+                                 style="width: 50%;">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@ViewBag.StaticSitePath/Service/InterStateMigrantWorkmen" class="InterState">Inter State Migrant Workmen</a>
+                        </h3>
+                        <p class="text InterStateTxt">Licensing, Renewal and Amendments.</p><a href="@ViewBag.StaticSitePath/Service/InterStateMigrantWorkmen" class="link-btn ReadMore4">
+                            Read
+                            More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@ViewBag.StaticSitePath/Service/BOCW"><img src="~/assets/img/icon/constructionworker.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/worker.png" style="width: 50%;">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@ViewBag.StaticSitePath/Service/BOCW" class="BOCW">Building and Other Construction Work Act, 1996</a>
+                        </h3>
+                        <p class="text BOCWTxt">Registration and Amendments.</p><a href="@ViewBag.StaticSitePath/Service/BOCW" class="link-btn ReadMore5">Read More<i class="fas fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@ViewBag.StaticSitePath/Service/MotorTransport"><img src="~/assets/img/icon/motortransport.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/transportation.png"
+                                 style="width: 50%;">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@ViewBag.StaticSitePath/Service/MotorTransport" class="Motor">Motor Transport Workers Act, 1961</a>
+                        </h3>
+                        <p class="text MotorTxt">Licensing, Renewal and Amendments.</p><a href="@ViewBag.StaticSitePath/Service/MotorTransport" class="link-btn ReadMore6">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@ViewBag.StaticSitePath/Service/TradeUnion"><img src="~/assets/img/icon/trading.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/stock.png" style="width: 50%;">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@ViewBag.StaticSitePath/Service/TradeUnion" class="Trade">Trade Unions Act, 1926</a>
+                        </h3>
+                        <p class="text TradeTxt">Registration and Amendments.</p><a href="@ViewBag.StaticSitePath/Service/TradeUnion" class="link-btn ReadMore7">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-service">
+                    <div class="service-image">
+                        <a href="@ViewBag.StaticSitePath/Service/FormsAndProcedures"><img src="~/assets/img/icon/forms.jpg" alt="Service Image" class="w-100"></a><span class="sr-icon">
+                            <img src="~/assets/img/icon/checklist.png" style="width: 50%;">
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title heading4 mb-15">
+                            <a href="@ViewBag.StaticSitePath/Service/FormsAndProcedures" class="Forms">Forms & Procedures</a>
+                        </h3>
+                        <p class="text FormsTxt">Registration and Inspection under various Labour Lows.</p><a href="@ViewBag.StaticSitePath/Service/FormsAndProcedures" class="link-btn ReadMore8">
+                            Read More<i class="fas fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="vs-work-process process-layout4 bg-light pt-60 pt-lg-130 pb-30 pb-lg-100">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-7">
+                <div class="section-title2">
+                    <h2 class="title1 OurProfile">Our Profile</h2>
+                    <span class="icon">
+                        <img src="~/assets/img/icon/distributed.png" style="width: 20%;"
+                             alt="Section Title Icons">
+                        <i class="line"></i> <i class="line-2"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-container="3" data-mdslidetoshow="2" data-smslidetoshow="2" data-xsslidetoshow="1">
+            <div class="col-xl-4">
+                <div class="vs-process bg-white">
+                    <span class="process-number text-primary3">01</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/hierarchy.png" style="width: 30%;"></i>
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4">
+                        <a href="@ViewBag.StaticSitePath/Profile/OrgStructure" class="Organisation">
+                            Organisation
+                            Structure
+                        </a>
+                    </h3>
+                    <p class="text mb-15 OrganisationTxt">
+                        Organisation Structure of the Department...
+                    </p><a href="@ViewBag.StaticSitePath/Profile/OrgStructure" class="link-btn font-light Learn">
+                        Learn More<i class="fas fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-process bg-white">
+                    <span class="process-number text-primary3">02</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/mechanic.png" style="width: 30%;">
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4"><a href="http://bocw.punjab.gov.in/bocwstatic" target="_blank" class="BOCW1">BOCW</a></h3>
+                    <p class="text mb-15 BOCW1Txt">
+                        Registration of Construction Workers in the State of Punjab
+                    </p><a href="http://bocw.punjab.gov.in/bocwstatic" target="_blank" class="link-btn font-light Learn1">Learn More<i class="fas fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-process bg-white">
+                    <span class="process-number text-primary3">03</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/presentation.png" style="width: 30%;">
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4"><a href="http://bocw.punjab.gov.in/index.aspx?id=Punjab%20Labour%20Welfare%20Board&MainData=40" target="_blank" class="Punjab">Punjab Welfare Board</a></h3>
+                    <p class="text mb-15 PunjabTxt">
+                        Registration of Industrial workers in the State of Punjab
+                    </p><a href="http://bocw.punjab.gov.in/index.aspx?id=Punjab%20Labour%20Welfare%20Board&MainData=40" target="_blank" class="link-btn font-light Learn2">
+                        Learn More<i class="fas fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-process bg-white">
+                    <span class="process-number text-primary3">04</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/information.png" style="width: 30%;">
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4">
+                        <a href="@ViewBag.StaticSitePath/Profile/RightToInformation" class="Right">
+                            Right to
+                            Information
+                        </a>
+                    </h3>
+                    <p class="text mb-15 RightTxt">
+                        An Act to provide information to the citizens under Right to Information Act.
+                    </p><a href="@ViewBag.StaticSitePath/Profile/RightToInformation" class="link-btn font-light Learn3">
+                        Learn More<i class="fas fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-process bg-white">
+                    <span class="process-number text-primary3">05</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/consult.png" style="width: 30%;">
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4">
+                        <a href="@ViewBag.StaticSitePath/Profile/RightToInformationService" class="Right1">
+                            Right to
+                            Service
+                        </a>
+                    </h3>
+                    <p class="text mb-15 Right1Txt">
+                        An Act to provide services to the people of the state within time limits...
+                    </p><a href="@ViewBag.StaticSitePath/Profile/RightToInformationService" class="link-btn font-light Learn4">
+                        Learn More<i class="fas fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="vs-process bg-white">
+                    <span class="process-number text-primary3">06</span>
+                    <div class="process-icon mb-25">
+                        <span class="text-primary">
+                            <img src="~/assets/img/icon/announcement.png" style="width: 30%;">
+                        </span>
+                    </div>
+                    <h3 class="process-title heading4">
+                        <a href="@ViewBag.StaticSitePath/Profile/TendersAndPublicNotices" class="Tenders">
+                            Tenders & Public
+                            Notices
+                        </a>
+                    </h3>
+                    <p class="text mb-15 TendersTxt">
+                        Tender information to provide tenders documents and public notice...
+                    </p><a href="@ViewBag.StaticSitePath/Profile/TendersAndPublicNotices" class="link-btn font-light Learn5">
+                        Learn More<i class="fas fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="vs-service-wrapper service-box-layout2 background-image py-60 py-lg-130" id="service">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-7">
+                <div class="section-title2 pb-lg-20">
+                    <h2 class="title sign">How To Add Digital Signature</h2>
+                    <span class="icon">
+                        <img src="~/assets/img/icon/digital-signature.png" style="width: 20%;"
+                             alt="Section Title Icons">
+                        <i class="line"></i> <i class="line-2"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-xl-12 video-box bg-primary">
+                <img src="~/assets/img/video/digital_signature.jpg" alt="Vidoe Thumb Image" class="w-100 h-100">
+                <a href="/assets/img/video/DigitalSignatureCertificate.mp4" class="play-btn overlay-center popup-video"><i class="fas fa-play"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="subscribe-form-layout1 py-40 py-lg-80" style="border: none;">
+    <div class="position-relative">
+        <div class="vs-brand-wrapper vs-brand-layout2 pt-30" style="margin-bottom: 30px;">
+            <div class="inner-wrapper bg-white px-20 px-md-40 px-xl-100">
+                <div class="row vs-carousel text-center py-30 py-md-50 py-xl-70" data-slidetoshow="5" data-lgslidetoshow="4" data-mdslidetoshow="4" data-smslidetoshow="2" data-xsslidetoshow="1">
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="vs-brand py-lg-30">
+                            <a href="about.html"><img src="~/assets/img/brand/investpunjab.jpg" class="width50" alt="Brand Image"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="vs-brand py-lg-30">
+                            <a href="about.html"><img src="~/assets/img/brand/bocw.jpg" class="width50" alt="Brand Image"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="vs-brand py-lg-30">
+                            <a href="about.html"><img src="~/assets/img/brand/indiagov.png" class="width50" alt="Brand Image"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="vs-brand py-lg-30">
+                            <a href="about.html"><img src="~/assets/img/brand/punjabtourism.png" class="width50" alt="Brand Image"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="vs-brand py-lg-30">
+                            <a href="about.html"><img src="~/assets/img/brand/digitalindia.jpg" class="width50" alt="Brand Image"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="vs-brand py-lg-30">
+                            <a href="about.html"><img src="~/assets/img/brand/dgrpunjab.png" class="width50" alt="Brand Image"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="vs-brand py-lg-30">
+                            <a href="about.html"><img src="~/assets/img/brand/makeinindia.jpg" class="width50" alt="Brand Image"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="vs-brand py-lg-30">
+                            <a href="about.html"><img src="~/assets/img/brand/sb.png" class="width50" alt="Brand Image"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="vs-brand py-lg-30">
+                            <a href="about.html"><img src="~/assets/img/brand/GIGW.jpeg" class="width50" alt="Brand Image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    //$(document).ready(function() {
+    //    $("#documentName").MaxLength({
+    //        MaxLength: 20,
+    //        DisplayCharacterCount: false
+    //    });
+    //});
+</script>
