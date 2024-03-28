@@ -34,9 +34,18 @@ namespace PbLabourStatic.Controllers
                 ViewBag.pbLabourAdminStaticBaseUrl = _configuration.GetSection("AppPath").GetSection("pbLabourAdminStaticBaseUrl").Value;
                 ViewBag.rootPath = _configuration.GetSection("AppPath").GetSection("rootPath").Value;
                 ViewBag.StaticSitePath = _configuration.GetSection("AppPath").GetSection("StaticSitePath").Value;
+                // Retrieve DocumentTypes list
+                var DocumentType = await _documentService.GetDocumentTypeList();
+
+                // Retrieve top documents
+                var topDocuments = await _documentService.GetTop();
+
                 var model = new DocumentIndex
                 {
-                    Documents = await _documentService.GetTop()
+                    Documents = topDocuments,
+                    isBannerImageAllow = DocumentType.Any(dt => dt.DocumentTypeName == "Banner"),
+                    isGailaryImageAllow = DocumentType.Any(dt => dt.DocumentTypeName == "GailaryImage"),
+                    isContentAllow = DocumentType.Any(dt => dt.DocumentTypeName == "Content")
                 };
                 return View(model);
             }
